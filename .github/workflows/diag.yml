@@ -1,0 +1,11 @@
+name: Check wiki links
+on: workflow_dispatch
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          for p in Waterfall_Quest Morytania Spirit_tree Fairy_ring Zanaris Box_trap Ectophial Sailing Varlamore Dragon_Slayer_I Ava%27s_accumulator Guardians_of_the_Rift Fossil_Island Managing_Miscellania Monkey_Madness_I Fremennik_Province Ancient_Magicks Lunar_spellbook Piety Barrows_gloves Thrall Mage_Arena_II Darkmeyer Vorkath Demonic_gorilla Prifddinas Desert_Treasure_II_-_The_Fallen_Empire ; do
+            body=$(curl -sSL -A "OsrsHelper link check (github.com/Tudoh8/OsrsHelper)" "https://oldschool.runescape.wiki/api.php?action=query&format=json&redirects=1&titles=$p")
+            echo "$p => $(echo "$body" | python3 -c 'import json,sys;d=json.load(sys.stdin)["query"];print("MISSING" if "-1" in d["pages"] else list(d["pages"].values())[0]["title"])')"
+          done
