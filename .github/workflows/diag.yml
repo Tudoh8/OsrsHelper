@@ -1,0 +1,14 @@
+name: Diagnose Wise Old Man API
+on: workflow_dispatch
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          echo "=== GET player"
+          curl -sS -D - -o body.json -H "Origin: https://tudoh8.github.io" "https://api.wiseoldman.net/v2/players/lynx%20titan" || true
+          python3 -c "import json;d=json.load(open('body.json'));print({k:d[k] for k in ('username','displayName','type','updatedAt')});s=d['latestSnapshot']['data']['skills'];print(list(s));print(s['attack'])" || head -c 500 body.json
+          echo "=== OPTIONS preflight POST"
+          curl -sS -D - -o /dev/null -X OPTIONS -H "Origin: https://tudoh8.github.io" -H "Access-Control-Request-Method: POST" -H "Access-Control-Request-Headers: content-type" "https://api.wiseoldman.net/v2/players/lynx%20titan" || true
+          echo "=== GET unknown player"
+          curl -sS -o - -w "\nHTTP %{http_code}\n" "https://api.wiseoldman.net/v2/players/zzqqnotrealxx" || true
