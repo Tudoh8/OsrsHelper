@@ -1,6 +1,6 @@
 import { Fragment } from 'react';
 import type { Advice, MilestoneProgress } from '../lib/advice';
-import { Chain, ProgressBar, SkillIcon } from './common';
+import { Chain, ProgressBar, SkillIcon, WikiLink } from './common';
 
 const STAGES = [
   { id: 'early', label: 'Early game' },
@@ -36,7 +36,7 @@ function MilestoneCard({ m }: { m: MilestoneProgress }) {
   return (
     <div className={`milestone${m.done ? ' done' : ''}`}>
       <div className="row">
-        <strong>{milestone.title}</strong>
+        <strong><WikiLink page={milestone.wiki}>{milestone.title}</WikiLink></strong>
         {m.done && <span className="badge badge-done">Unlocked</span>}
       </div>
       <p className="small">{milestone.why}</p>

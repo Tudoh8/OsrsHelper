@@ -1,6 +1,6 @@
 import type { Advice, MilestoneProgress } from '../lib/advice';
 import { formatXp } from '../lib/skills';
-import { Gaps, QuestLink, SkillIcon, StatusBadge } from './common';
+import { Gaps, QuestLink, SkillIcon, StatusBadge, WikiLink } from './common';
 import type { Tab } from '../App';
 import type { QuestState } from '../lib/player';
 
@@ -93,7 +93,7 @@ export function NextSteps({ advice, goTo, onSetQuest }: { advice: Advice; goTo: 
           {milestones.map((m) => (
             <li key={m.milestone.id}>
               <div className="row">
-                <strong>{m.milestone.title}</strong>
+                <strong><WikiLink page={m.milestone.wiki}>{m.milestone.title}</WikiLink></strong>
                 <span className="muted small">
                   {m.remaining} quest{m.remaining === 1 ? '' : 's'} left
                 </span>

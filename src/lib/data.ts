@@ -64,11 +64,14 @@ export const ORDER_INDEX: Map<string, number> = new Map(IRONMAN_ORDER.map((n, i)
 
 export const MAX_QUEST_POINTS = QUESTS.reduce((s, q) => s + q.questPoints, 0);
 
-export function questWikiUrl(name: string): string {
-  const page = name.startsWith('Recipe for Disaster') ? 'Recipe for Disaster' : name;
+export function wikiUrl(page: string): string {
   return `https://oldschool.runescape.wiki/w/${encodeURIComponent(page.replace(/ /g, '_'))}`;
 }
 
+export function questWikiUrl(name: string): string {
+  return wikiUrl(name.startsWith('Recipe for Disaster') ? 'Recipe for Disaster' : name);
+}
+
 export function diaryWikiUrl(diary: string): string {
-  return `https://oldschool.runescape.wiki/w/${encodeURIComponent(`${diary} Diary`.replace(/ /g, '_'))}`;
+  return wikiUrl(`${diary} Diary`);
 }

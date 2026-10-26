@@ -1,6 +1,6 @@
 import { useState, type ReactNode } from 'react';
 import type { Check, ChainStep, Status } from '../lib/advice';
-import { questWikiUrl, type Rewards } from '../lib/data';
+import { questWikiUrl, wikiUrl, type Rewards } from '../lib/data';
 import { formatXp, skillIcon, type Skill } from '../lib/skills';
 
 const STATUS_LABEL: Record<Status, string> = {
@@ -31,6 +31,14 @@ export function SkillIcon({ skill, size = 18 }: { skill: Skill; size?: number })
       loading="lazy"
       onError={() => setFailed(true)}
     />
+  );
+}
+
+export function WikiLink({ page, children }: { page: string; children: ReactNode }) {
+  return (
+    <a href={wikiUrl(page)} target="_blank" rel="noreferrer">
+      {children}
+    </a>
   );
 }
 
