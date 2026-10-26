@@ -1,0 +1,2973 @@
+{
+ "Ardougne": {
+  "Easy": {
+   "skills": [
+    {
+     "skill": "Thieving",
+     "level": 5,
+     "boostable": true
+    }
+   ],
+   "quests": [
+    {
+     "name": "Rune Mysteries",
+     "state": "finished"
+    },
+    {
+     "name": "Biohazard",
+     "state": "finished"
+    }
+   ],
+   "rewards": {
+    "items": [
+     "Ardougne Cloak 1",
+     "2,500 Exp. Lamp (Any skill over 30)"
+    ],
+    "unlocks": [
+     "Unlimited teleports to the Ardougne Monastery with the Ardougne cloak 1",
+     "Double death runes (200) when trading in cats to civilians",
+     "10% increased chance to successfully steal from stalls in Ardougne",
+     "Jubster and Frogeel drops will be noted at the Tower of Life"
+    ]
+   }
+  },
+  "Medium": {
+   "skills": [
+    {
+     "skill": "Agility",
+     "level": 39,
+     "boostable": true
+    },
+    {
+     "skill": "Farming",
+     "level": 31,
+     "boostable": true
+    },
+    {
+     "skill": "Firemaking",
+     "level": 50,
+     "boostable": true
+    },
+    {
+     "skill": "Magic",
+     "level": 51,
+     "boostable": true
+    },
+    {
+     "skill": "Ranged",
+     "level": 21,
+     "boostable": true
+    },
+    {
+     "skill": "Strength",
+     "level": 38,
+     "boostable": true
+    },
+    {
+     "skill": "Thieving",
+     "level": 38,
+     "boostable": true
+    }
+   ],
+   "quests": [
+    {
+     "name": "Enlightened Journey",
+     "state": "finished"
+    },
+    {
+     "name": "The Hand in the Sand",
+     "state": "finished"
+    },
+    {
+     "name": "Watchtower",
+     "state": "started"
+    },
+    {
+     "name": "Sea Slug",
+     "state": "started"
+    },
+    {
+     "name": "Tower of Life",
+     "state": "finished"
+    },
+    {
+     "name": "Underground Pass",
+     "state": "finished"
+    }
+   ],
+   "rewards": {
+    "items": [
+     "Ardougne Cloak 2",
+     "7,500 Exp. Lamp (Any skill over 40)"
+    ],
+    "unlocks": [
+     "Three daily teleports to Ardougne farm patch with the Ardougne cloak 2",
+     "100 free noted pure essence every day from Wizard Cromperty",
+     "Unicow, Newtroost, and Spidine drops will be noted at the Tower of Life",
+     "10% increased chance to pickpocket in Ardougne (even if the cloak is not equipped or in inventory)",
+     "Ability to toggle the Ring of life teleport to Ardougne",
+     "Receive additional runes when crafting essence at the Ourania Altar"
+    ]
+   }
+  },
+  "Hard": {
+   "skills": [
+    {
+     "skill": "Construction",
+     "level": 50,
+     "boostable": false
+    },
+    {
+     "skill": "Farming",
+     "level": 70,
+     "boostable": true
+    },
+    {
+     "skill": "Hunter",
+     "level": 59,
+     "boostable": true
+    },
+    {
+     "skill": "Magic",
+     "level": 66,
+     "boostable": true
+    },
+    {
+     "skill": "Runecraft",
+     "level": 65,
+     "boostable": true
+    },
+    {
+     "skill": "Smithing",
+     "level": 68,
+     "boostable": true
+    },
+    {
+     "skill": "Thieving",
+     "level": 72,
+     "boostable": true
+    }
+   ],
+   "quests": [
+    {
+     "name": "Monkey Madness I",
+     "state": "started"
+    },
+    {
+     "name": "Legends' Quest",
+     "state": "finished"
+    },
+    {
+     "name": "Mourning's End Part II",
+     "state": "finished"
+    },
+    {
+     "name": "Watchtower",
+     "state": "finished"
+    }
+   ],
+   "rewards": {
+    "items": [
+     "Ardougne Cloak 3",
+     "15,000 Exp. Lamp (Any skill over 50)"
+    ],
+    "unlocks": [
+     "Five daily teleports to Ardougne farm patch with the Ardougne cloak 3",
+     "150 free noted pure essence every day from Wizard Cromperty",
+     "Ability to toggle Watchtower Teleport to the centre of Yanille",
+     "10% increased chance of succeeding when pickpocketing around Gielinor"
+    ]
+   }
+  },
+  "Elite": {
+   "skills": [
+    {
+     "skill": "Agility",
+     "level": 90,
+     "boostable": true
+    },
+    {
+     "skill": "Cooking",
+     "level": 91,
+     "boostable": true
+    },
+    {
+     "skill": "Crafting",
+     "level": 10,
+     "boostable": true
+    },
+    {
+     "skill": "Farming",
+     "level": 85,
+     "boostable": true
+    },
+    {
+     "skill": "Fishing",
+     "level": 81,
+     "boostable": false
+    },
+    {
+     "skill": "Fletching",
+     "level": 69,
+     "boostable": true
+    },
+    {
+     "skill": "Magic",
+     "level": 94,
+     "boostable": true
+    },
+    {
+     "skill": "Smithing",
+     "level": 91,
+     "boostable": true
+    },
+    {
+     "skill": "Thieving",
+     "level": 82,
+     "boostable": true
+    }
+   ],
+   "quests": [
+    {
+     "name": "Desert Treasure I",
+     "state": "finished"
+    },
+    {
+     "name": "Haunted Mine",
+     "state": "finished"
+    }
+   ],
+   "rewards": {
+    "items": [
+     "Ardougne Cloak 4",
+     "50,000 Exp. Lamp (Any skill over 70)"
+    ],
+    "unlocks": [
+     "Unlimited teleports to Ardougne farm patch with the Ardougne cloak 4",
+     "250 free noted pure essence every day from Wizard Cromperty",
+     "50% more fish from Fishing Trawler",
+     "25% more marks of grace from the Ardougne Rooftop Course",
+     "Bert will automatically deliver 84 buckets of sand to your bank each day you log in (unless you are an Ultimate Ironman), even if you cancel membership"
+    ]
+   }
+  }
+ },
+ "Desert": {
+  "Easy": {
+   "skills": [
+    {
+     "skill": "Hunter",
+     "level": 5,
+     "boostable": true
+    },
+    {
+     "skill": "Thieving",
+     "level": 21,
+     "boostable": false
+    }
+   ],
+   "quests": [],
+   "rewards": {
+    "xp": [
+     {
+      "skill": "Strength",
+      "xp": 20
+     }
+    ],
+    "items": [
+     "Desert amulet 1",
+     "2,500 Exp. Lamp (Any skill over 30)"
+    ],
+    "unlocks": [
+     "Pharaoh's sceptre can hold up to 10 charges",
+     "Goats will always drop noted desert goat horn",
+     "Simon Templeton will now buy your noted artefacts too"
+    ]
+   }
+  },
+  "Medium": {
+   "skills": [
+    {
+     "skill": "Agility",
+     "level": 30,
+     "boostable": true
+    },
+    {
+     "skill": "Construction",
+     "level": 20,
+     "boostable": false
+    },
+    {
+     "skill": "Herblore",
+     "level": 36,
+     "boostable": true
+    },
+    {
+     "skill": "Hunter",
+     "level": 47,
+     "boostable": true
+    },
+    {
+     "skill": "Slayer",
+     "level": 22,
+     "boostable": true
+    },
+    {
+     "skill": "Thieving",
+     "level": 25,
+     "boostable": true
+    },
+    {
+     "skill": "Woodcutting",
+     "level": 35,
+     "boostable": true
+    }
+   ],
+   "quests": [
+    {
+     "name": "The Golem",
+     "state": "finished"
+    },
+    {
+     "name": "Eagles' Peak",
+     "state": "finished"
+    },
+    {
+     "name": "Spirits of the Elid",
+     "state": "finished"
+    },
+    {
+     "name": "Enakhra's Lament",
+     "state": "finished"
+    }
+   ],
+   "rewards": {
+    "items": [
+     "Desert amulet 2",
+     "7,500 Exp. Lamp (Any skill over 40)"
+    ],
+    "unlocks": [
+     "Pharaoh's sceptre can hold up to 25 charges",
+     "One teleport to Nardah per day on desert amulet"
+    ]
+   }
+  },
+  "Hard": {
+   "skills": [
+    {
+     "skill": "Agility",
+     "level": 70,
+     "boostable": true
+    },
+    {
+     "skill": "Attack",
+     "level": 50,
+     "boostable": false
+    },
+    {
+     "skill": "Defence",
+     "level": 10,
+     "boostable": false
+    },
+    {
+     "skill": "Firemaking",
+     "level": 60,
+     "boostable": true
+    },
+    {
+     "skill": "Magic",
+     "level": 68,
+     "boostable": true
+    },
+    {
+     "skill": "Mining",
+     "level": 45,
+     "boostable": true
+    },
+    {
+     "skill": "Slayer",
+     "level": 65,
+     "boostable": true
+    },
+    {
+     "skill": "Smithing",
+     "level": 68,
+     "boostable": true
+    },
+    {
+     "skill": "Thieving",
+     "level": 65,
+     "boostable": true
+    }
+   ],
+   "quests": [
+    {
+     "name": "Contact!",
+     "state": "finished"
+    },
+    {
+     "name": "Dream Mentor",
+     "state": "finished"
+    },
+    {
+     "name": "Desert Treasure I",
+     "state": "finished"
+    },
+    {
+     "name": "The Feud",
+     "state": "finished"
+    }
+   ],
+   "rewards": {
+    "items": [
+     "Desert amulet 3",
+     "15,000 Exp. Lamp (Any skill over 50)"
+    ],
+    "unlocks": [
+     "Pharaoh's sceptre can hold up to 50 charges",
+     "Unlocked the ability to toggle the Camulet teleport location between the inside and outside of Enakhra's Temple",
+     "All carpet rides are free",
+     "Zahur will create unfinished potions for 200 coins per potion from a vial of water and a clean herb. Items can be noted or unnoted",
+     "Zahur will now clean noted grimy herbs for 200 coins each",
+     "Ropes placed at both the Kalphite Lair entrance and the Kalphite Queen tunnel entrance become permanent",
+     "Increased experience on the Pollnivneach Rooftop Course"
+    ]
+   }
+  },
+  "Elite": {
+   "skills": [
+    {
+     "skill": "Construction",
+     "level": 78,
+     "boostable": true
+    },
+    {
+     "skill": "Cooking",
+     "level": 85,
+     "boostable": true
+    },
+    {
+     "skill": "Fletching",
+     "level": 95,
+     "boostable": true
+    },
+    {
+     "skill": "Magic",
+     "level": 94,
+     "boostable": true
+    },
+    {
+     "skill": "Prayer",
+     "level": 85,
+     "boostable": false
+    },
+    {
+     "skill": "Thieving",
+     "level": 91,
+     "boostable": false
+    }
+   ],
+   "quests": [
+    {
+     "name": "Desert Treasure I",
+     "state": "finished"
+    },
+    {
+     "name": "Icthlarin's Little Helper",
+     "state": "started"
+    },
+    {
+     "name": "Priest in Peril",
+     "state": "finished"
+    },
+    {
+     "name": "The Tourist Trap",
+     "state": "finished"
+    }
+   ],
+   "rewards": {
+    "items": [
+     "Desert amulet 4",
+     "50,000 Exp. Lamp (Any skill over 70)"
+    ],
+    "unlocks": [
+     "Unlimited teleports to Nardah and the Kalphite Cave on the ",
+     "The Nardah teleport on the desert amulet now takes players ",
+     "100% protection against desert heat when the desert amulet is worn",
+     "Pharaoh's sceptre can hold up to 100 charges",
+     "Free pass-through of the Shantay Pass",
+     "Access to a crevice shortcut, requiring 86 Agility, "
+    ]
+   }
+  }
+ },
+ "Falador": {
+  "Easy": {
+   "skills": [
+    {
+     "skill": "Agility",
+     "level": 5,
+     "boostable": true
+    },
+    {
+     "skill": "Construction",
+     "level": 16,
+     "boostable": true
+    },
+    {
+     "skill": "Mining",
+     "level": 10,
+     "boostable": true
+    },
+    {
+     "skill": "Smithing",
+     "level": 13,
+     "boostable": true
+    }
+   ],
+   "quests": [
+    {
+     "name": "Doric's Quest",
+     "state": "finished"
+    },
+    {
+     "name": "The Knight's Sword",
+     "state": "finished"
+    },
+    {
+     "name": "Rune Mysteries",
+     "state": "finished"
+    }
+   ],
+   "rewards": {
+    "items": [
+     "Falador Shield (1)",
+     "2,500 Exp. Lamp (Any skill over 30)"
+    ],
+    "unlocks": [
+     "Tight-gap shortcut to the Chaos Temple from Burthorpe."
+    ]
+   }
+  },
+  "Medium": {
+   "skills": [],
+   "quests": [],
+   "rewards": {
+    "items": [
+     "Falador Shield (2)",
+     "7,500 Exp. Lamp (Any skill over 40)"
+    ],
+    "unlocks": [
+     "10% more experience from the Falador Farming Patch",
+     "Access to a shortcut in the Motherlode Mine",
+     "Increased chance to receiving a clue scroll from a guard in Falador"
+    ]
+   }
+  },
+  "Hard": {
+   "skills": [
+    {
+     "skill": "Agility",
+     "level": 50,
+     "boostable": true
+    },
+    {
+     "skill": "Defence",
+     "level": 50,
+     "boostable": false
+    },
+    {
+     "skill": "Mining",
+     "level": 60,
+     "boostable": true
+    },
+    {
+     "skill": "Prayer",
+     "level": 70,
+     "boostable": false
+    },
+    {
+     "skill": "Slayer",
+     "level": 72,
+     "boostable": true
+    },
+    {
+     "skill": "Thieving",
+     "level": 50,
+     "boostable": true
+    }
+   ],
+   "quests": [
+    {
+     "name": "Grim Tales",
+     "state": "finished"
+    },
+    {
+     "name": "Heroes' Quest",
+     "state": "finished"
+    },
+    {
+     "name": "The Slug Menace",
+     "state": "finished"
+    }
+   ],
+   "rewards": {
+    "items": [
+     "Falador Shield (3)",
+     "15,000 Exp. Lamp (Any skill over 50)"
+    ],
+    "unlocks": [
+     "Access to the bank in the Crafting Guild",
+     "Giant Moles primary drops are now noted",
+     "Access to shortcut to Fountain of Heroes"
+    ]
+   }
+  },
+  "Elite": {
+   "skills": [
+    {
+     "skill": "Agility",
+     "level": 80,
+     "boostable": true
+    },
+    {
+     "skill": "Farming",
+     "level": 91,
+     "boostable": true
+    },
+    {
+     "skill": "Herblore",
+     "level": 81,
+     "boostable": true
+    },
+    {
+     "skill": "Woodcutting",
+     "level": 75,
+     "boostable": true
+    }
+   ],
+   "quests": [
+    {
+     "name": "Wanted!",
+     "state": "finished"
+    }
+   ],
+   "rewards": {
+    "items": [
+     "Falador Shield (4)",
+     "50,000 Exp. Lamp (Any skill over 70)"
+    ],
+    "unlocks": [
+     "Tree patch in Falador is now disease free.",
+     "Increased chance at higher level ores when clearing pay-dirt in the Motherlode Mine.",
+     "Access to the alternative Amethyst mining spot."
+    ]
+   }
+  }
+ },
+ "Fremennik": {
+  "Easy": {
+   "skills": [
+    {
+     "skill": "Crafting",
+     "level": 23,
+     "boostable": true
+    },
+    {
+     "skill": "Firemaking",
+     "level": 15,
+     "boostable": true
+    },
+    {
+     "skill": "Hunter",
+     "level": 11,
+     "boostable": true
+    },
+    {
+     "skill": "Mining",
+     "level": 20,
+     "boostable": true
+    },
+    {
+     "skill": "Smithing",
+     "level": 20,
+     "boostable": true
+    },
+    {
+     "skill": "Thieving",
+     "level": 5,
+     "boostable": true
+    },
+    {
+     "skill": "Woodcutting",
+     "level": 15,
+     "boostable": true
+    }
+   ],
+   "quests": [
+    {
+     "name": "The Fremennik Trials",
+     "state": "finished"
+    },
+    {
+     "name": "The Giant Dwarf",
+     "state": "started"
+    },
+    {
+     "name": "Troll Stronghold",
+     "state": "finished"
+    },
+    {
+     "name": "Death Plateau",
+     "state": "finished"
+    }
+   ],
+   "rewards": {
+    "items": [
+     "Fremennik Sea Boots (1)",
+     "2,500 Exp. Lamp (Any skill over 30)"
+    ],
+    "unlocks": [
+     "Peer the Seer will act as a bank deposit box.",
+     "Fossegrimen will give your enchanted lyre an extra charge when making a sacrifice."
+    ]
+   }
+  },
+  "Medium": {
+   "skills": [
+    {
+     "skill": "Construction",
+     "level": 37,
+     "boostable": true
+    },
+    {
+     "skill": "Hunter",
+     "level": 35,
+     "boostable": true
+    },
+    {
+     "skill": "Mining",
+     "level": 40,
+     "boostable": true
+    },
+    {
+     "skill": "Prayer",
+     "level": 43,
+     "boostable": false
+    },
+    {
+     "skill": "Slayer",
+     "level": 47,
+     "boostable": true
+    },
+    {
+     "skill": "Thieving",
+     "level": 42,
+     "boostable": true
+    }
+   ],
+   "quests": [
+    {
+     "name": "Olaf's Quest",
+     "state": "finished"
+    },
+    {
+     "name": "Eagles' Peak",
+     "state": "finished"
+    },
+    {
+     "name": "Between a Rock...",
+     "state": "finished"
+    },
+    {
+     "name": "Horror from the Deep",
+     "state": "finished"
+    }
+   ],
+   "rewards": {
+    "items": [
+     "Fremennik Sea Boots (2)",
+     "7,500 Exp. Lamp (Any skill over 40)"
+    ],
+    "unlocks": [
+     "Improved rate of gaining approval on Miscellania.",
+     "Unlocking infinite charges for your lyre with Fossegrimen costs 600 of each fish rather than 800"
+    ]
+   }
+  },
+  "Hard": {
+   "skills": [
+    {
+     "skill": "Herblore",
+     "level": 66,
+     "boostable": true
+    },
+    {
+     "skill": "Hunter",
+     "level": 55,
+     "boostable": true
+    },
+    {
+     "skill": "Magic",
+     "level": 72,
+     "boostable": true
+    },
+    {
+     "skill": "Mining",
+     "level": 70,
+     "boostable": true
+    },
+    {
+     "skill": "Smithing",
+     "level": 60,
+     "boostable": false
+    },
+    {
+     "skill": "Thieving",
+     "level": 75,
+     "boostable": true
+    },
+    {
+     "skill": "Woodcutting",
+     "level": 56,
+     "boostable": true
+    }
+   ],
+   "quests": [
+    {
+     "name": "Eadgar's Ruse",
+     "state": "finished"
+    },
+    {
+     "name": "Lunar Diplomacy",
+     "state": "finished"
+    },
+    {
+     "name": "The Giant Dwarf",
+     "state": "started"
+    },
+    {
+     "name": "The Fremennik Isles",
+     "state": "finished"
+    },
+    {
+     "name": "Throne of Miscellania",
+     "state": "finished"
+    }
+   ],
+   "rewards": {
+    "items": [
+     "Fremennik Sea Boots (3)",
+     "15,000 Exp. Lamp (Any skill over 50)"
+    ],
+    "unlocks": [
+     "Ability to change enchanted lyre teleport destination to Waterbirth Island.",
+     "Aviansies in the God Wars Dungeon will drop noted adamantite bars.",
+     "Stony Basalt teleport destination can be changed to the roof of Troll Stronghold",
+     "Access to 2 new Lunar Spells, Charge Dragonstone and Tan Leather",
+     "The Rellekka Rooftop Course will give additional experience upon completion"
+    ]
+   }
+  },
+  "Elite": {
+   "skills": [
+    {
+     "skill": "Agility",
+     "level": 80,
+     "boostable": true
+    },
+    {
+     "skill": "Crafting",
+     "level": 80,
+     "boostable": true
+    },
+    {
+     "skill": "Hitpoints",
+     "level": 70,
+     "boostable": false
+    },
+    {
+     "skill": "Prayer",
+     "level": 43,
+     "boostable": false
+    },
+    {
+     "skill": "Ranged",
+     "level": 70,
+     "boostable": false
+    },
+    {
+     "skill": "Runecraft",
+     "level": 82,
+     "boostable": true
+    },
+    {
+     "skill": "Slayer",
+     "level": 83,
+     "boostable": true
+    },
+    {
+     "skill": "Strength",
+     "level": 70,
+     "boostable": false
+    }
+   ],
+   "quests": [],
+   "rewards": {
+    "items": [
+     "Fremennik Sea Boots (4)",
+     "50,000 Exp. Lamp (Any skill over 70)"
+    ],
+    "unlocks": [
+     "Dagannoth bones will be dropped in noted form",
+     "Enchanted lyre can now teleport to Jatizso and Neitiznot",
+     "Even faster approval gain in Miscellania",
+     "Seal of passage is no longer needed to interact with anyone on Lunar Isle",
+     "Access to the Return Orb inside the bank on Lunar Isle"
+    ]
+   }
+  }
+ },
+ "Kandarin": {
+  "Easy": {
+   "skills": [
+    {
+     "skill": "Agility",
+     "level": 20,
+     "boostable": true
+    },
+    {
+     "skill": "Farming",
+     "level": 13,
+     "boostable": true
+    },
+    {
+     "skill": "Fishing",
+     "level": 16,
+     "boostable": true
+    }
+   ],
+   "quests": [],
+   "rewards": {
+    "items": [
+     "Kandarin headgear (1)",
+     "2,500 Exp. Lamp (Any skill over 30)"
+    ],
+    "unlocks": [
+     "Coal trucks can hold up to 140 coal.",
+     "The Flax keeper will exchange 30 noted flax for 30 noted bow strings daily",
+     "5% more marks of grace on Seers' Village Rooftop Course"
+    ]
+   }
+  },
+  "Medium": {
+   "skills": [
+    {
+     "skill": "Agility",
+     "level": 36,
+     "boostable": true
+    },
+    {
+     "skill": "Cooking",
+     "level": 43,
+     "boostable": true
+    },
+    {
+     "skill": "Farming",
+     "level": 26,
+     "boostable": true
+    },
+    {
+     "skill": "Fishing",
+     "level": 46,
+     "boostable": true
+    },
+    {
+     "skill": "Fletching",
+     "level": 50,
+     "boostable": true
+    },
+    {
+     "skill": "Herblore",
+     "level": 48,
+     "boostable": true
+    },
+    {
+     "skill": "Magic",
+     "level": 45,
+     "boostable": true
+    },
+    {
+     "skill": "Mining",
+     "level": 30,
+     "boostable": true
+    },
+    {
+     "skill": "Ranged",
+     "level": 40,
+     "boostable": true
+    },
+    {
+     "skill": "Strength",
+     "level": 22,
+     "boostable": true
+    },
+    {
+     "skill": "Thieving",
+     "level": 47,
+     "boostable": true
+    }
+   ],
+   "quests": [
+    {
+     "name": "Alfred Grimhand's Barcrawl",
+     "state": "finished"
+    },
+    {
+     "name": "Elemental Workshop II",
+     "state": "finished"
+    },
+    {
+     "name": "Waterfall Quest",
+     "state": "finished"
+    }
+   ],
+   "rewards": {
+    "items": [
+     "Kandarin headgear (2)",
+     "7,500 Exp. Lamp (Any skill over 40)"
+    ],
+    "unlocks": [
+     "Coal trucks can hold up to 280 coal.",
+     "The Flax keeper will exchange 60 noted flax for 60 noted bow strings daily",
+     "10% more marks of grace on Seers' Village Rooftop Course",
+     "5% increased chance to save a harvest life from the Catherby herb patch"
+    ]
+   }
+  },
+  "Hard": {
+   "skills": [
+    {
+     "skill": "Agility",
+     "level": 60,
+     "boostable": true
+    },
+    {
+     "skill": "Construction",
+     "level": 50,
+     "boostable": false
+    },
+    {
+     "skill": "Defence",
+     "level": 70,
+     "boostable": false
+    },
+    {
+     "skill": "Firemaking",
+     "level": 65,
+     "boostable": true
+    },
+    {
+     "skill": "Fishing",
+     "level": 70,
+     "boostable": true
+    },
+    {
+     "skill": "Fletching",
+     "level": 70,
+     "boostable": true
+    },
+    {
+     "skill": "Magic",
+     "level": 56,
+     "boostable": true
+    },
+    {
+     "skill": "Prayer",
+     "level": 70,
+     "boostable": false
+    },
+    {
+     "skill": "Smithing",
+     "level": 75,
+     "boostable": true
+    },
+    {
+     "skill": "Strength",
+     "level": 50,
+     "boostable": false
+    },
+    {
+     "skill": "Thieving",
+     "level": 53,
+     "boostable": true
+    },
+    {
+     "skill": "Woodcutting",
+     "level": 60,
+     "boostable": true
+    }
+   ],
+   "quests": [
+    {
+     "name": "Tai Bwo Wannai Trio",
+     "state": "finished"
+    },
+    {
+     "name": "Desert Treasure I",
+     "state": "finished"
+    }
+   ],
+   "rewards": {
+    "items": [
+     "Kandarin headgear (3)",
+     "15,000 Exp. Lamp (Any skill over 50)"
+    ],
+    "unlocks": [
+     "Coal trucks can hold up to 308 coal.",
+     "Thormac will enchant battlestaves for 30,000 coins each",
+     "The Flax keeper will exchange 120 noted flax for 120 noted bow strings daily",
+     "15% more marks of grace on Seers' Village Rooftop Course",
+     "10% increased chance to save a harvest life from the Catherby herb patch",
+     "10% increased reward points from Barbarian Assault",
+     "10% increased activation chance (multiplicative) for the special effect from enchanted bolts (Including PvP)",
+     "Ability to toggle Camelot Teleport to outside Seers' Village bank"
+    ]
+   }
+  },
+  "Elite": {
+   "skills": [
+    {
+     "skill": "Agility",
+     "level": 60,
+     "boostable": true
+    },
+    {
+     "skill": "Cooking",
+     "level": 80,
+     "boostable": true
+    },
+    {
+     "skill": "Crafting",
+     "level": 85,
+     "boostable": true
+    },
+    {
+     "skill": "Farming",
+     "level": 79,
+     "boostable": true
+    },
+    {
+     "skill": "Firemaking",
+     "level": 85,
+     "boostable": true
+    },
+    {
+     "skill": "Fishing",
+     "level": 76,
+     "boostable": true
+    },
+    {
+     "skill": "Herblore",
+     "level": 86,
+     "boostable": true
+    },
+    {
+     "skill": "Magic",
+     "level": 87,
+     "boostable": true
+    },
+    {
+     "skill": "Smithing",
+     "level": 90,
+     "boostable": true
+    }
+   ],
+   "quests": [
+    {
+     "name": "Family Crest",
+     "state": "finished"
+    },
+    {
+     "name": "Lunar Diplomacy",
+     "state": "finished"
+    }
+   ],
+   "rewards": {
+    "items": [
+     "Kandarin headgear (4)",
+     "50,000 Exp. Lamp (Any skill over 70)"
+    ],
+    "unlocks": [
+     "Thormac will enchant battlestaves for 20,000 coins each",
+     "The Flax keeper will exchange 250 noted flax for 250 noted bow strings daily",
+     "15% increased chance to save a harvest life from the Catherby herb patch",
+     "The first 200 Coal placed into coal trucks every day will be automatically transported to your bank",
+     "Otto Godblessed will turn a Zamorakian spear into Zamorakian hasta for 150,000 Coins"
+    ]
+   }
+  }
+ },
+ "Karamja": {
+  "Easy": {
+   "skills": [
+    {
+     "skill": "Agility",
+     "level": 15,
+     "boostable": true
+    },
+    {
+     "skill": "Mining",
+     "level": 40,
+     "boostable": true
+    }
+   ],
+   "quests": [],
+   "rewards": {
+    "items": [
+     "Karamja Gloves (1)",
+     "1,000 Exp. Lamp (Any skill)"
+    ],
+    "unlocks": [
+     "Better prices in shops on Karamja and in Tzhaar City.",
+     "Half price ships from Ardougne to Brimhaven and Musa Point to Port Sarim."
+    ]
+   }
+  },
+  "Medium": {
+   "skills": [
+    {
+     "skill": "Agility",
+     "level": 12,
+     "boostable": true
+    },
+    {
+     "skill": "Cooking",
+     "level": 16,
+     "boostable": true
+    },
+    {
+     "skill": "Farming",
+     "level": 27,
+     "boostable": true
+    },
+    {
+     "skill": "Fishing",
+     "level": 65,
+     "boostable": true
+    },
+    {
+     "skill": "Hunter",
+     "level": 41,
+     "boostable": true
+    },
+    {
+     "skill": "Mining",
+     "level": 40,
+     "boostable": true
+    },
+    {
+     "skill": "Woodcutting",
+     "level": 50,
+     "boostable": true
+    }
+   ],
+   "quests": [
+    {
+     "name": "The Grand Tree",
+     "state": "finished"
+    },
+    {
+     "name": "Tai Bwo Wannai Trio",
+     "state": "finished"
+    },
+    {
+     "name": "Dragon Slayer I",
+     "state": "finished"
+    },
+    {
+     "name": "Shilo Village",
+     "state": "finished"
+    }
+   ],
+   "rewards": {
+    "items": [
+     "Karamja Gloves (2)",
+     "5,000 Exp. Lamp (Any skill above level 30)"
+    ],
+    "unlocks": [
+     "Increased Agility Experience when redeeming Agility tickets when wearing Karamja gloves",
+     "10% increased Agility experience earned from Brimhaven Agility Arena when wearing Karamja gloves",
+     "Access to the underground portion of the Shilo Village mine"
+    ]
+   }
+  },
+  "Hard": {
+   "skills": [
+    {
+     "skill": "Agility",
+     "level": 53,
+     "boostable": true
+    },
+    {
+     "skill": "Cooking",
+     "level": 50,
+     "boostable": false
+    },
+    {
+     "skill": "Mining",
+     "level": 52,
+     "boostable": true
+    },
+    {
+     "skill": "Ranged",
+     "level": 42,
+     "boostable": true
+    },
+    {
+     "skill": "Runecraft",
+     "level": 44,
+     "boostable": true
+    },
+    {
+     "skill": "Slayer",
+     "level": 50,
+     "boostable": false
+    },
+    {
+     "skill": "Strength",
+     "level": 50,
+     "boostable": true
+    },
+    {
+     "skill": "Thieving",
+     "level": 50,
+     "boostable": true
+    },
+    {
+     "skill": "Woodcutting",
+     "level": 15,
+     "boostable": true
+    }
+   ],
+   "quests": [
+    {
+     "name": "Tai Bwo Wannai Trio",
+     "state": "finished"
+    }
+   ],
+   "combatLevel": 100,
+   "rewards": {
+    "items": [
+     "Karamja Gloves (3)",
+     "10,000 Exp. Lamp (Any skill above level 40)"
+    ],
+    "unlocks": [
+     "Unlimited Teleports to the underground Shilo Village mine"
+    ]
+   }
+  },
+  "Elite": {
+   "skills": [
+    {
+     "skill": "Farming",
+     "level": 72,
+     "boostable": true
+    },
+    {
+     "skill": "Herblore",
+     "level": 87,
+     "boostable": true
+    },
+    {
+     "skill": "Runecraft",
+     "level": 91,
+     "boostable": true
+    }
+   ],
+   "quests": [],
+   "rewards": {
+    "items": [
+     "Karamja Gloves (4)",
+     "50,000 Exp. Lamp (Any skill above level 70)"
+    ],
+    "unlocks": [
+     "10% chance of receiving 2 Agility arena tickets in the Brimhaven Agility Dungeon",
+     "Free usage of Shilo Village's furnace",
+     "Free cart rides on Hajedy's cart system",
+     "Free access to the Hardwood Grove",
+     "Red and Metal in Brimhaven Dungeon will drop noted dragonhide and bars",
+     "One free resurrection per day in the Fight Caves (Not the Inferno)",
+     "Double Tokkul from TzHaar Fight Caves, Inferno and Ket-Rak's Challenges"
+    ]
+   }
+  }
+ },
+ "Kourend & Kebos": {
+  "Easy": {
+   "skills": [
+    {
+     "skill": "Construction",
+     "level": 25,
+     "boostable": false
+    },
+    {
+     "skill": "Fishing",
+     "level": 20,
+     "boostable": true
+    },
+    {
+     "skill": "Herblore",
+     "level": 12,
+     "boostable": true
+    },
+    {
+     "skill": "Mining",
+     "level": 15,
+     "boostable": true
+    },
+    {
+     "skill": "Thieving",
+     "level": 25,
+     "boostable": true
+    }
+   ],
+   "quests": [
+    {
+     "name": "Druidic Ritual",
+     "state": "finished"
+    }
+   ],
+   "rewards": {
+    "items": [
+     "Rada's Blessing (1)",
+     "2,500 Exp. Lamp (Any skill over 30)"
+    ],
+    "unlocks": [
+     "Halved access cost for Crabclaw Isle.",
+     "Doubled drop rate of Xeric's talisman, excluding stone chests.",
+     "Reduced tanning prices at Eodan in Forthos Dungeon to 80%.",
+     "Access to the cooking range in the Hosidius Kitchen, which has a 5% reduced burn rate.",
+     "The allotment, flower, and herb patches in Hosidius will never get diseased."
+    ]
+   }
+  },
+  "Medium": {
+   "skills": [
+    {
+     "skill": "Agility",
+     "level": 49,
+     "boostable": true
+    },
+    {
+     "skill": "Crafting",
+     "level": 30,
+     "boostable": true
+    },
+    {
+     "skill": "Farming",
+     "level": 45,
+     "boostable": true
+    },
+    {
+     "skill": "Firemaking",
+     "level": 50,
+     "boostable": false
+    },
+    {
+     "skill": "Fishing",
+     "level": 43,
+     "boostable": false
+    },
+    {
+     "skill": "Hunter",
+     "level": 53,
+     "boostable": true
+    },
+    {
+     "skill": "Mining",
+     "level": 42,
+     "boostable": true
+    },
+    {
+     "skill": "Woodcutting",
+     "level": 50,
+     "boostable": true
+    }
+   ],
+   "quests": [
+    {
+     "name": "Fairytale II - Cure a Queen",
+     "state": "started"
+    },
+    {
+     "name": "The Depths of Despair",
+     "state": "finished"
+    },
+    {
+     "name": "The Queen of Thieves",
+     "state": "finished"
+    },
+    {
+     "name": "Tale of the Righteous",
+     "state": "finished"
+    },
+    {
+     "name": "The Forsaken Tower",
+     "state": "finished"
+    },
+    {
+     "name": "The Ascent of Arceuus",
+     "state": "finished"
+    },
+    {
+     "name": "Eagles' Peak",
+     "state": "finished"
+    }
+   ],
+   "rewards": {
+    "items": [
+     "Rada's Blessing (2)",
+     "7,500 Exp. Lamp (Any skill over 40)"
+    ],
+    "unlocks": [
+     "Free access cost for Crabclaw Isle",
+     "5% chance to mine two Dense essence blocks at once",
+     "20 free Dynamite per day from Thirus",
+     "Reduced tanning prices at Eodan in Forthos Dungeon to 60%."
+    ]
+   }
+  },
+  "Hard": {
+   "skills": [
+    {
+     "skill": "Farming",
+     "level": 74,
+     "boostable": true
+    },
+    {
+     "skill": "Magic",
+     "level": 66,
+     "boostable": true
+    },
+    {
+     "skill": "Mining",
+     "level": 65,
+     "boostable": true
+    },
+    {
+     "skill": "Slayer",
+     "level": 62,
+     "boostable": true
+    },
+    {
+     "skill": "Smithing",
+     "level": 70,
+     "boostable": true
+    },
+    {
+     "skill": "Thieving",
+     "level": 49,
+     "boostable": false
+    },
+    {
+     "skill": "Woodcutting",
+     "level": 60,
+     "boostable": true
+    }
+   ],
+   "quests": [
+    {
+     "name": "Dream Mentor",
+     "state": "finished"
+    },
+    {
+     "name": "The Forsaken Tower",
+     "state": "finished"
+    }
+   ],
+   "combatLevel": 85,
+   "rewards": {
+    "items": [
+     "Rada's Blessing (3)",
+     "Ash sanctifier",
+     "15,000 Exp. Lamp (Any skill over 50)"
+    ],
+    "unlocks": [
+     "Slayer helmet will work as a shayzien helm (5) after talking to Captain Cleive.",
+     "5% increased chance to save a harvest life at the Hosidius and Farming Guild herb patches.",
+     "40 free Dynamite per day from Thirus",
+     "Reduced tanning prices at Eodan in Forthos Dungeon to 40%."
+    ]
+   }
+  },
+  "Elite": {
+   "skills": [
+    {
+     "skill": "Cooking",
+     "level": 84,
+     "boostable": true
+    },
+    {
+     "skill": "Crafting",
+     "level": 38,
+     "boostable": true
+    },
+    {
+     "skill": "Farming",
+     "level": 85,
+     "boostable": true
+    },
+    {
+     "skill": "Fishing",
+     "level": 82,
+     "boostable": true
+    },
+    {
+     "skill": "Fletching",
+     "level": 40,
+     "boostable": true
+    },
+    {
+     "skill": "Magic",
+     "level": 90,
+     "boostable": true
+    },
+    {
+     "skill": "Mining",
+     "level": 38,
+     "boostable": true
+    },
+    {
+     "skill": "Runecraft",
+     "level": 77,
+     "boostable": true
+    },
+    {
+     "skill": "Slayer",
+     "level": 95,
+     "boostable": true
+    },
+    {
+     "skill": "Woodcutting",
+     "level": 90,
+     "boostable": true
+    }
+   ],
+   "quests": [],
+   "rewards": {
+    "items": [
+     "Rada's Blessing (4)",
+     "50,000 Exp. Lamp (Any skill over 70)"
+    ],
+    "unlocks": [
+     "Demonic ashes from the ash sanctifier grant full Prayer experience",
+     "Completing a slayer task from Konar quo Maten gives 20 Slayer points (up from 18)",
+     "10% reduced burn chance at the city kitchens (up from 5%)",
+     "Protection from the burn effect in Karuulm Slayer Dungeon without boots of stone",
+     "5% increased chance to save a harvest life at the Hosidius and Farming Guild herb patches.",
+     "80 free Dynamite per day from Thirus",
+     "10% additional blood runes from blood runecrafting (no additional xp)",
+     "Reduced tanning prices at Eodan in Forthos Dungeon to 20%.",
+     "10% increased chance of obtaining higher-tier ores in the Blast mine."
+    ]
+   }
+  }
+ },
+ "Lumbridge & Draynor": {
+  "Easy": {
+   "skills": [
+    {
+     "skill": "Firemaking",
+     "level": 15,
+     "boostable": true
+    },
+    {
+     "skill": "Fishing",
+     "level": 15,
+     "boostable": true
+    },
+    {
+     "skill": "Mining",
+     "level": 15,
+     "boostable": true
+    },
+    {
+     "skill": "Runecraft",
+     "level": 5,
+     "boostable": true
+    },
+    {
+     "skill": "Slayer",
+     "level": 7,
+     "boostable": true
+    },
+    {
+     "skill": "Woodcutting",
+     "level": 15,
+     "boostable": true
+    }
+   ],
+   "quests": [
+    {
+     "name": "Rune Mysteries",
+     "state": "finished"
+    },
+    {
+     "name": "Cook's Assistant",
+     "state": "finished"
+    }
+   ],
+   "rewards": {
+    "items": [
+     "Explorer's ring 1",
+     "2,500 Exp. Lamp (Any skill over 30)"
+    ],
+    "unlocks": [
+     "30 casts of Low Level Alchemy per day without runes (does not provide experience) from Explorer's ring",
+     "50% run energy replenish twice a day from Explorer's ring"
+    ]
+   }
+  },
+  "Medium": {
+   "skills": [
+    {
+     "skill": "Agility",
+     "level": 20,
+     "boostable": true
+    },
+    {
+     "skill": "Crafting",
+     "level": 38,
+     "boostable": true
+    },
+    {
+     "skill": "Fishing",
+     "level": 30,
+     "boostable": true
+    },
+    {
+     "skill": "Hunter",
+     "level": 42,
+     "boostable": true
+    },
+    {
+     "skill": "Magic",
+     "level": 31,
+     "boostable": true
+    },
+    {
+     "skill": "Ranged",
+     "level": 50,
+     "boostable": false
+    },
+    {
+     "skill": "Runecraft",
+     "level": 23,
+     "boostable": true
+    },
+    {
+     "skill": "Strength",
+     "level": 19,
+     "boostable": true
+    },
+    {
+     "skill": "Thieving",
+     "level": 38,
+     "boostable": true
+    },
+    {
+     "skill": "Woodcutting",
+     "level": 30,
+     "boostable": true
+    }
+   ],
+   "quests": [
+    {
+     "name": "Animal Magnetism",
+     "state": "finished"
+    }
+   ],
+   "combatLevel": 70,
+   "rewards": {
+    "items": [
+     "Explorer's ring 2",
+     "7,500 Exp. Lamp (Any skill over 40)"
+    ],
+    "unlocks": [
+     "50% run energy replenish 3 times a day from Explorer's ring",
+     "Three daily teleports to cabbage patch near Falador farm for Explorer's ring"
+    ]
+   }
+  },
+  "Hard": {
+   "skills": [
+    {
+     "skill": "Agility",
+     "level": 46,
+     "boostable": true
+    },
+    {
+     "skill": "Crafting",
+     "level": 70,
+     "boostable": true
+    },
+    {
+     "skill": "Farming",
+     "level": 63,
+     "boostable": true
+    },
+    {
+     "skill": "Firemaking",
+     "level": 65,
+     "boostable": true
+    },
+    {
+     "skill": "Magic",
+     "level": 60,
+     "boostable": true
+    },
+    {
+     "skill": "Prayer",
+     "level": 52,
+     "boostable": false
+    },
+    {
+     "skill": "Runecraft",
+     "level": 59,
+     "boostable": true
+    },
+    {
+     "skill": "Woodcutting",
+     "level": 57,
+     "boostable": true
+    }
+   ],
+   "quests": [
+    {
+     "name": "Tears of Guthix",
+     "state": "finished"
+    },
+    {
+     "name": "Another Slice of H.A.M.",
+     "state": "finished"
+    },
+    {
+     "name": "Recipe for Disaster - Another Cook's Quest",
+     "state": "finished"
+    },
+    {
+     "name": "Lost City",
+     "state": "finished"
+    }
+   ],
+   "rewards": {
+    "items": [
+     "Explorer's ring 3",
+     "15,000 Exp. Lamp (Any skill over 50)"
+    ],
+    "unlocks": [
+     "50% run energy replenish 4 times a day from Explorer's ring",
+     "Unlimited teleports to cabbage patch near Falador farm for Explorer's ring",
+     "10% increased experience from Tears of Guthix"
+    ]
+   }
+  },
+  "Elite": {
+   "skills": [
+    {
+     "skill": "Agility",
+     "level": 70,
+     "boostable": true
+    },
+    {
+     "skill": "Ranged",
+     "level": 70,
+     "boostable": true
+    },
+    {
+     "skill": "Smithing",
+     "level": 88,
+     "boostable": true
+    },
+    {
+     "skill": "Strength",
+     "level": 70,
+     "boostable": true
+    },
+    {
+     "skill": "Thieving",
+     "level": 78,
+     "boostable": true
+    },
+    {
+     "skill": "Woodcutting",
+     "level": 75,
+     "boostable": true
+    }
+   ],
+   "quests": [],
+   "rewards": {
+    "items": [
+     "Explorer's ring 4",
+     "50,000 Exp. Lamp (Any skill over 70)"
+    ],
+    "unlocks": [
+     "100% run energy replenish 3 times a day from Explorer's ring",
+     "30 casts of High Level Alchemy per day (does not provide experience) from Explorer's ring",
+     "20% discount on items in the Culinaromancer's Chest",
+     "Ability to use Fairy rings without the need of a Dramen or Lunar staff",
+     "Unlocked the 6th slot for blocking Slayer tasks"
+    ]
+   }
+  }
+ },
+ "Morytania": {
+  "Easy": {
+   "skills": [
+    {
+     "skill": "Cooking",
+     "level": 12,
+     "boostable": true
+    },
+    {
+     "skill": "Crafting",
+     "level": 15,
+     "boostable": true
+    },
+    {
+     "skill": "Farming",
+     "level": 23,
+     "boostable": true
+    },
+    {
+     "skill": "Slayer",
+     "level": 15,
+     "boostable": true
+    }
+   ],
+   "quests": [
+    {
+     "name": "Nature Spirit",
+     "state": "finished"
+    }
+   ],
+   "combatLevel": 20,
+   "rewards": {
+    "items": [
+     "Morytania legs 1",
+     "2,500 Exp. Lamp (Any skill over 30)"
+    ],
+    "unlocks": [
+     "2 daily teleports to the Slime Pit beneath the Ectofuntus from Morytania legs",
+     "50% chance of a ghast ignoring you rather than attacking",
+     "2.5% more Slayer experience in the Slayer Tower while on a Slayer task"
+    ]
+   }
+  },
+  "Medium": {
+   "skills": [
+    {
+     "skill": "Agility",
+     "level": 40,
+     "boostable": true
+    },
+    {
+     "skill": "Cooking",
+     "level": 40,
+     "boostable": false
+    },
+    {
+     "skill": "Herblore",
+     "level": 22,
+     "boostable": true
+    },
+    {
+     "skill": "Hunter",
+     "level": 29,
+     "boostable": true
+    },
+    {
+     "skill": "Slayer",
+     "level": 42,
+     "boostable": true
+    },
+    {
+     "skill": "Smithing",
+     "level": 35,
+     "boostable": true
+    },
+    {
+     "skill": "Woodcutting",
+     "level": 45,
+     "boostable": true
+    }
+   ],
+   "quests": [
+    {
+     "name": "Dwarf Cannon",
+     "state": "finished"
+    },
+    {
+     "name": "Ghosts Ahoy",
+     "state": "finished"
+    },
+    {
+     "name": "Lair of Tarn Razorlor",
+     "state": "finished"
+    },
+    {
+     "name": "Cabin Fever",
+     "state": "finished"
+    },
+    {
+     "name": "In Aid of the Myreque",
+     "state": "started"
+    }
+   ],
+   "rewards": {
+    "items": [
+     "Morytania legs 2",
+     "7,500 Exp. Lamp (Any skill over 40)"
+    ],
+    "unlocks": [
+     "5 daily teleports to the Slime Pit beneath the Ectofuntus from Morytania legs",
+     "Morytania legs act as a ghostspeak amulet when worn",
+     "Robin offers 13 buckets of slime and 13 pots of bonemeal in exchange for bones each day",
+     "5% more Slayer experience in the Slayer Tower while on a Slayer task"
+    ]
+   }
+  },
+  "Hard": {
+   "skills": [
+    {
+     "skill": "Agility",
+     "level": 71,
+     "boostable": true
+    },
+    {
+     "skill": "Construction",
+     "level": 50,
+     "boostable": true
+    },
+    {
+     "skill": "Defence",
+     "level": 70,
+     "boostable": false
+    },
+    {
+     "skill": "Farming",
+     "level": 53,
+     "boostable": true
+    },
+    {
+     "skill": "Firemaking",
+     "level": 50,
+     "boostable": true
+    },
+    {
+     "skill": "Magic",
+     "level": 66,
+     "boostable": true
+    },
+    {
+     "skill": "Mining",
+     "level": 55,
+     "boostable": true
+    },
+    {
+     "skill": "Prayer",
+     "level": 70,
+     "boostable": false
+    },
+    {
+     "skill": "Slayer",
+     "level": 58,
+     "boostable": true
+    },
+    {
+     "skill": "Woodcutting",
+     "level": 50,
+     "boostable": true
+    }
+   ],
+   "quests": [
+    {
+     "name": "Cabin Fever",
+     "state": "finished"
+    },
+    {
+     "name": "Desert Treasure I",
+     "state": "finished"
+    },
+    {
+     "name": "Haunted Mine",
+     "state": "finished"
+    },
+    {
+     "name": "In Aid of the Myreque",
+     "state": "finished"
+    },
+    {
+     "name": "King's Ransom",
+     "state": "finished"
+    },
+    {
+     "name": "Nature Spirit",
+     "state": "finished"
+    },
+    {
+     "name": "The Great Brain Robbery",
+     "state": "finished"
+    }
+   ],
+   "rewards": {
+    "items": [
+     "Morytania legs 3",
+     "15,000 Exp. Lamp (Any skill over 50)"
+    ],
+    "unlocks": [
+     "Unlimited teleports to Burgh de Rott from Morytania legs",
+     "Bonecrusher - an item that automatically buries bones of monsters killed when carried",
+     "Robin offers 26 free buckets of slime and 26 pots of bonemeal in exchange for bones each day",
+     "Double Mort myre fungi when casting Bloom",
+     "50% more Prayer experience from burning shade remains",
+     "50% more runes from the Barrows chest",
+     "7.5% more Slayer experience in the Slayer Tower while on a Slayer task"
+    ]
+   }
+  },
+  "Elite": {
+   "skills": [
+    {
+     "skill": "Crafting",
+     "level": 84,
+     "boostable": true
+    },
+    {
+     "skill": "Defence",
+     "level": 70,
+     "boostable": false
+    },
+    {
+     "skill": "Firemaking",
+     "level": 80,
+     "boostable": true
+    },
+    {
+     "skill": "Fishing",
+     "level": 96,
+     "boostable": true
+    },
+    {
+     "skill": "Magic",
+     "level": 83,
+     "boostable": true
+    },
+    {
+     "skill": "Slayer",
+     "level": 85,
+     "boostable": true
+    },
+    {
+     "skill": "Strength",
+     "level": 76,
+     "boostable": true
+    }
+   ],
+   "quests": [
+    {
+     "name": "In Aid of the Myreque",
+     "state": "finished"
+    },
+    {
+     "name": "Shades of Mort'ton",
+     "state": "finished"
+    },
+    {
+     "name": "Lunar Diplomacy",
+     "state": "finished"
+    }
+   ],
+   "rewards": {
+    "items": [
+     "Morytania legs 4",
+     "50,000 Exp. Lamp (Any skill over 30)"
+    ],
+    "unlocks": [
+     "Unlimited teleports to the slime pit beneath the Ectofuntus from Morytania legs",
+     "Robin offers 39 free buckets of slime and 39 pots of bonemeal in exchange for bones each day",
+     "50% more Firemaking experience when burning shade remains",
+     "Bones buried from the Bonecrusher grant full Prayer experience",
+     "Access to the herb patch on Harmony Island",
+     "10% more Slayer experience in the Slayer Tower while on a Slayer task"
+    ]
+   }
+  }
+ },
+ "Varrock": {
+  "Easy": {
+   "skills": [
+    {
+     "skill": "Agility",
+     "level": 13,
+     "boostable": true
+    },
+    {
+     "skill": "Crafting",
+     "level": 8,
+     "boostable": true
+    },
+    {
+     "skill": "Fishing",
+     "level": 20,
+     "boostable": true
+    },
+    {
+     "skill": "Mining",
+     "level": 15,
+     "boostable": true
+    },
+    {
+     "skill": "Runecraft",
+     "level": 9,
+     "boostable": true
+    },
+    {
+     "skill": "Thieving",
+     "level": 5,
+     "boostable": true
+    }
+   ],
+   "quests": [
+    {
+     "name": "Rune Mysteries",
+     "state": "finished"
+    }
+   ],
+   "rewards": {
+    "items": [
+     "Varrock Armor (1)",
+     "2,500 Exp. Lamp (Any skill over 30)"
+    ],
+    "unlocks": [
+     "10% Chance to mine 2 ores at once up to gold ore",
+     "10% Chance of smelting 2 bars at once up to Steel when using the Edgeville furnace",
+     "Zaff will sell 15 Battlestaves per day for 7,000 Coins each",
+     "The Skull sceptre will now hold 14 charges"
+    ]
+   }
+  },
+  "Medium": {
+   "skills": [
+    {
+     "skill": "Agility",
+     "level": 30,
+     "boostable": true
+    },
+    {
+     "skill": "Farming",
+     "level": 30,
+     "boostable": true
+    },
+    {
+     "skill": "Firemaking",
+     "level": 40,
+     "boostable": true
+    },
+    {
+     "skill": "Magic",
+     "level": 25,
+     "boostable": true
+    }
+   ],
+   "quests": [
+    {
+     "name": "Garden of Tranquillity",
+     "state": "finished"
+    },
+    {
+     "name": "The Dig Site",
+     "state": "finished"
+    },
+    {
+     "name": "Tree Gnome Village",
+     "state": "finished"
+    },
+    {
+     "name": "Gertrude's Cat",
+     "state": "finished"
+    },
+    {
+     "name": "A Soul's Bane",
+     "state": "finished"
+    },
+    {
+     "name": "Enlightened Journey",
+     "state": "finished"
+    }
+   ],
+   "questPointsRequired": 32,
+   "combatLevel": 40,
+   "rewards": {
+    "items": [
+     "Varrock Armor (2)",
+     "7,500 Exp. Lamp (Any skill over 40)"
+    ],
+    "unlocks": [
+     "10% Chance to mine 2 ores at once up to mithril ore",
+     "10% Chance of smelting 2 bars at once up to mithril when using the Edgeville furnace",
+     "Zaff will sell 30 Battlestaves per day for 7,000 Coins each",
+     "The Skull sceptre will now hold 18 charges",
+     "Ability to toggle the Varrock Teleport to go to The Grand Exchange"
+    ]
+   }
+  },
+  "Hard": {
+   "skills": [
+    {
+     "skill": "Agility",
+     "level": 51,
+     "boostable": true
+    },
+    {
+     "skill": "Construction",
+     "level": 50,
+     "boostable": false
+    },
+    {
+     "skill": "Farming",
+     "level": 68,
+     "boostable": true
+    },
+    {
+     "skill": "Firemaking",
+     "level": 60,
+     "boostable": true
+    },
+    {
+     "skill": "Hunter",
+     "level": 69,
+     "boostable": true
+    },
+    {
+     "skill": "Magic",
+     "level": 54,
+     "boostable": true
+    },
+    {
+     "skill": "Prayer",
+     "level": 52,
+     "boostable": false
+    },
+    {
+     "skill": "Woodcutting",
+     "level": 60,
+     "boostable": true
+    }
+   ],
+   "quests": [
+    {
+     "name": "Desert Treasure I",
+     "state": "finished"
+    }
+   ],
+   "rewards": {
+    "items": [
+     "Varrock Armor (3)",
+     "15,000 Exp. Lamp (Any skill over 50)"
+    ],
+    "unlocks": [
+     "10% Chance to mine 2 ores at once up to adamantite ore",
+     "10% Chance of smelting 2 bars at once up to adamantite when using the Edgeville furnace",
+     "Zaff will sell 60 Battlestaves per day for 7,000 Coins each",
+     "The Skull sceptre will now hold 22 charges",
+     "Access to the Cooks' Guild bank"
+    ]
+   }
+  },
+  "Elite": {
+   "skills": [
+    {
+     "skill": "Cooking",
+     "level": 95,
+     "boostable": true
+    },
+    {
+     "skill": "Fletching",
+     "level": 81,
+     "boostable": true
+    },
+    {
+     "skill": "Herblore",
+     "level": 90,
+     "boostable": true
+    },
+    {
+     "skill": "Magic",
+     "level": 86,
+     "boostable": true
+    },
+    {
+     "skill": "Smithing",
+     "level": 89,
+     "boostable": true
+    }
+   ],
+   "quests": [
+    {
+     "name": "Dream Mentor",
+     "state": "finished"
+    },
+    {
+     "name": "The Tourist Trap",
+     "state": "finished"
+    },
+    {
+     "name": "Rune Mysteries",
+     "state": "finished"
+    }
+   ],
+   "rewards": {
+    "items": [
+     "Varrock Armor (4)",
+     "50,000 Exp. Lamp (Any skill over 70)"
+    ],
+    "unlocks": [
+     "10% Chance to mine 2 ores at once, up to and including Amethyst",
+     "10% Chance of smelting 2 bars at once when using the Edgeville furnace",
+     "Zaff will sell 120 Battlestaves per day for 7,000 Coins each",
+     "The Skull sceptre will now hold 26 charges",
+     "Acts as a prospector jacket for experience bonus and clues"
+    ]
+   }
+  }
+ },
+ "Western Provinces": {
+  "Easy": {
+   "skills": [
+    {
+     "skill": "Fletching",
+     "level": 20,
+     "boostable": true
+    },
+    {
+     "skill": "Hunter",
+     "level": 9,
+     "boostable": true
+    },
+    {
+     "skill": "Mining",
+     "level": 15,
+     "boostable": true
+    }
+   ],
+   "quests": [
+    {
+     "name": "Big Chompy Bird Hunting",
+     "state": "finished"
+    },
+    {
+     "name": "Rune Mysteries",
+     "state": "finished"
+    }
+   ],
+   "combatLevel": 40,
+   "rewards": {
+    "items": [
+     "Western Banner 1",
+     "2,500 Exp. Lamp (Any skill over 30)"
+    ],
+    "unlocks": [
+     "25% chance of 2 chompy birds appearing when Chompy bird hunting",
+     "25 free ogre arrows every day from Rantz"
+    ]
+   }
+  },
+  "Medium": {
+   "skills": [
+    {
+     "skill": "Agility",
+     "level": 37,
+     "boostable": true
+    },
+    {
+     "skill": "Cooking",
+     "level": 42,
+     "boostable": true
+    },
+    {
+     "skill": "Firemaking",
+     "level": 35,
+     "boostable": true
+    },
+    {
+     "skill": "Fishing",
+     "level": 46,
+     "boostable": true
+    },
+    {
+     "skill": "Hunter",
+     "level": 31,
+     "boostable": true
+    },
+    {
+     "skill": "Mining",
+     "level": 40,
+     "boostable": true
+    },
+    {
+     "skill": "Woodcutting",
+     "level": 35,
+     "boostable": true
+    }
+   ],
+   "quests": [
+    {
+     "name": "Big Chompy Bird Hunting",
+     "state": "finished"
+    },
+    {
+     "name": "Eagles' Peak",
+     "state": "finished"
+    },
+    {
+     "name": "Monkey Madness I",
+     "state": "started"
+    },
+    {
+     "name": "The Eyes of Glouphrie",
+     "state": "finished"
+    },
+    {
+     "name": "One Small Favour",
+     "state": "started"
+    }
+   ],
+   "combatLevel": 70,
+   "rewards": {
+    "items": [
+     "Western banner 2",
+     "7,500 Exp. Lamp (Any skill over 40)"
+    ],
+    "unlocks": [
+     "50% chance of 2 chompy birds appearing when Chompy bird hunting",
+     "Crystal saw holds twice as many charges (56 up from 28)",
+     "50 free ogre arrows every day from Rantz"
+    ]
+   }
+  },
+  "Hard": {
+   "skills": [
+    {
+     "skill": "Agility",
+     "level": 48,
+     "boostable": true
+    },
+    {
+     "skill": "Construction",
+     "level": 65,
+     "boostable": true
+    },
+    {
+     "skill": "Cooking",
+     "level": 62,
+     "boostable": true
+    },
+    {
+     "skill": "Farming",
+     "level": 68,
+     "boostable": true
+    },
+    {
+     "skill": "Firemaking",
+     "level": 50,
+     "boostable": true
+    },
+    {
+     "skill": "Fishing",
+     "level": 62,
+     "boostable": true
+    },
+    {
+     "skill": "Hunter",
+     "level": 69,
+     "boostable": true
+    },
+    {
+     "skill": "Magic",
+     "level": 64,
+     "boostable": true
+    },
+    {
+     "skill": "Mining",
+     "level": 70,
+     "boostable": true
+    },
+    {
+     "skill": "Ranged",
+     "level": 70,
+     "boostable": false
+    },
+    {
+     "skill": "Thieving",
+     "level": 75,
+     "boostable": true
+    },
+    {
+     "skill": "Woodcutting",
+     "level": 50,
+     "boostable": true
+    }
+   ],
+   "quests": [
+    {
+     "name": "Mourning's End Part I",
+     "state": "started"
+    },
+    {
+     "name": "Recipe for Disaster - King Awowogei",
+     "state": "finished"
+    },
+    {
+     "name": "Swan Song",
+     "state": "finished"
+    }
+   ],
+   "combatLevel": 100,
+   "rewards": {
+    "items": [
+     "Western banner 3",
+     "15,000 Exp. Lamp (Any skill over 50)"
+    ],
+    "unlocks": [
+     "One free daily teleport to the Piscatoris Fishing Colony from Western banner 3",
+     "Ability to upgrade void knight armour into elite void knight armour",
+     "Access to the monkey skull room on Ape Atoll",
+     "Access to the Hunter master's private red chinchompa hunting ground",
+     "100 free ogre arrows every day from Rantz",
+     "Teleport crystals can hold up to 5 charges.",
+     "Ability to purchase a crystal halberd from Islwyn for 750,000 coins."
+    ]
+   }
+  },
+  "Elite": {
+   "skills": [
+    {
+     "skill": "Agility",
+     "level": 85,
+     "boostable": true
+    },
+    {
+     "skill": "Attack",
+     "level": 42,
+     "boostable": false
+    },
+    {
+     "skill": "Defence",
+     "level": 42,
+     "boostable": false
+    },
+    {
+     "skill": "Farming",
+     "level": 75,
+     "boostable": true
+    },
+    {
+     "skill": "Fletching",
+     "level": 85,
+     "boostable": true
+    },
+    {
+     "skill": "Hitpoints",
+     "level": 42,
+     "boostable": false
+    },
+    {
+     "skill": "Magic",
+     "level": 42,
+     "boostable": false
+    },
+    {
+     "skill": "Prayer",
+     "level": 22,
+     "boostable": false
+    },
+    {
+     "skill": "Ranged",
+     "level": 42,
+     "boostable": false
+    },
+    {
+     "skill": "Slayer",
+     "level": 93,
+     "boostable": false
+    },
+    {
+     "skill": "Strength",
+     "level": 42,
+     "boostable": false
+    },
+    {
+     "skill": "Thieving",
+     "level": 85,
+     "boostable": true
+    }
+   ],
+   "quests": [
+    {
+     "name": "Big Chompy Bird Hunting",
+     "state": "finished"
+    },
+    {
+     "name": "Mourning's End Part I",
+     "state": "started"
+    },
+    {
+     "name": "Regicide",
+     "state": "started"
+    }
+   ],
+   "combatLevel": 40,
+   "rewards": {
+    "items": [
+     "Western banner 4",
+     "50,000 Exp. Lamp (Any skill over 70)"
+    ],
+    "unlocks": [
+     "Unlimited teleports to the Piscatoris Fishing Colony from Western banner 4",
+     "2 chompy birds will always appear when Chompy bird hunting",
+     "Chance of receiving a chompy chick pet when chompy bird hunting",
+     "Slayer point rewards from tasks assigned by Nieve/Steve are increased to match those of Duradel",
+     "150 free ogre arrows every day from Rantz",
+     "One free resurrection per day when fighting Zulrah"
+    ]
+   }
+  }
+ },
+ "Wilderness": {
+  "Easy": {
+   "skills": [
+    {
+     "skill": "Agility",
+     "level": 15,
+     "boostable": true
+    },
+    {
+     "skill": "Magic",
+     "level": 21,
+     "boostable": true
+    },
+    {
+     "skill": "Mining",
+     "level": 15,
+     "boostable": true
+    }
+   ],
+   "quests": [
+    {
+     "name": "Enter the Abyss",
+     "state": "finished"
+    }
+   ],
+   "rewards": {
+    "items": [
+     "Wilderness Sword 1",
+     "2,500 Exp. Lamp (Any skill over 30)"
+    ],
+    "unlocks": [
+     "Wilderness lever can teleport you to either Edgeville or Ardougne",
+     "40 random free runes from Lundail once per day"
+    ]
+   }
+  },
+  "Medium": {
+   "skills": [
+    {
+     "skill": "Agility",
+     "level": 52,
+     "boostable": true
+    },
+    {
+     "skill": "Magic",
+     "level": 60,
+     "boostable": true
+    },
+    {
+     "skill": "Mining",
+     "level": 55,
+     "boostable": true
+    },
+    {
+     "skill": "Slayer",
+     "level": 50,
+     "boostable": true
+    },
+    {
+     "skill": "Smithing",
+     "level": 50,
+     "boostable": true
+    },
+    {
+     "skill": "Woodcutting",
+     "level": 61,
+     "boostable": false
+    }
+   ],
+   "quests": [
+    {
+     "name": "Between a Rock...",
+     "state": "started"
+    }
+   ],
+   "rewards": {
+    "items": [
+     "Wilderness Sword 2",
+     "7,500 Exp. Lamp (Any skill over 40)"
+    ],
+    "unlocks": [
+     "Increases the chance of a successful yield from ents by 15%",
+     "20% off entry to Resource Area (6000gp)",
+     "Can have 4 ecumenical keys at a time",
+     "80 random free runes from Lundail once per day",
+     "Access to shortcut in Deep Wilderness Dungeon",
+     "Access to Callisto, Venenatis, and Vet'ion without requiring a Slayer task",
+     "Ability to obtain loot from chests in the Rogues' Castle",
+     "Players will roll on Zombie pirate drop table 50% of the time (rather than 15%)"
+    ]
+   }
+  },
+  "Hard": {
+   "skills": [
+    {
+     "skill": "Agility",
+     "level": 64,
+     "boostable": true
+    },
+    {
+     "skill": "Fishing",
+     "level": 53,
+     "boostable": true
+    },
+    {
+     "skill": "Hunter",
+     "level": 67,
+     "boostable": true
+    },
+    {
+     "skill": "Magic",
+     "level": 66,
+     "boostable": true
+    },
+    {
+     "skill": "Slayer",
+     "level": 68,
+     "boostable": true
+    },
+    {
+     "skill": "Smithing",
+     "level": 75,
+     "boostable": true
+    }
+   ],
+   "quests": [
+    {
+     "name": "Death Plateau",
+     "state": "started"
+    },
+    {
+     "name": "Mage Arena I",
+     "state": "finished"
+    }
+   ],
+   "rewards": {
+    "items": [
+     "Wilderness Sword 3",
+     "15,000 Exp. Lamp (Any skill over 50)"
+    ],
+    "unlocks": [
+     "One free teleport to the Fountain of Rune daily on the Wilderness Sword 3",
+     "50% more lava shards per lava scale",
+     "Access to Artio, Spindel, and Calvar'ion",
+     "Can have 5 ecumenical keys at a time",
+     "120 random free runes from Lundail once per day",
+     "Able to choose your destination when teleporting through the Ancient Obelisks",
+     "50% off entry to Resource Area (3,750gp)",
+     "Wine of Zamorak found in the Chaos Temple (hut) and Deep Wilderness Dungeon will be received in noted form",
+     "The teleport delay in both the Revenant Caves and the Wilderness boss caves will no longer apply to you",
+     "25% more loot when opening rogues' chests",
+     "Ecumenical keys may be sold to the Lesser Fanatic in Edgeville for 61,500 coins per key"
+    ]
+   }
+  },
+  "Elite": {
+   "skills": [
+    {
+     "skill": "Cooking",
+     "level": 90,
+     "boostable": true
+    },
+    {
+     "skill": "Firemaking",
+     "level": 75,
+     "boostable": true
+    },
+    {
+     "skill": "Fishing",
+     "level": 85,
+     "boostable": true
+    },
+    {
+     "skill": "Magic",
+     "level": 96,
+     "boostable": true
+    },
+    {
+     "skill": "Mining",
+     "level": 85,
+     "boostable": true
+    },
+    {
+     "skill": "Slayer",
+     "level": 83,
+     "boostable": true
+    },
+    {
+     "skill": "Smithing",
+     "level": 90,
+     "boostable": true
+    },
+    {
+     "skill": "Thieving",
+     "level": 84,
+     "boostable": true
+    },
+    {
+     "skill": "Woodcutting",
+     "level": 75,
+     "boostable": true
+    }
+   ],
+   "quests": [
+    {
+     "name": "Desert Treasure I",
+     "state": "finished"
+    }
+   ],
+   "rewards": {
+    "items": [
+     "Wilderness Sword 4",
+     "50,000 Exp. Lamp (Any skill over 70)"
+    ],
+    "unlocks": [
+     "Unlimited free teleports to the Fountain of Rune on the Wilderness Sword 4",
+     "Free entry to the Resource Area",
+     "All dragon bones drops in the Wilderness are noted. (Note: This does not include the King Black Dragon, as his lair is not Wilderness affected.)",
+     "Noted lava dragon bones can be toggled by speaking to the Lesser Fanatic.",
+     "200 random free runes from Lundail once per day",
+     "Increased dark crab catch rate"
+    ]
+   }
+  }
+ }
+}
