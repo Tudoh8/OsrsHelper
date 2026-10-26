@@ -1,0 +1,14 @@
+name: Diagnose WikiSync CORS
+on: workflow_dispatch
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          for name in "Lynx%20Titan" "Zezima"; do
+            echo "=== GET $name with Origin"
+            curl -sS -D - -o body.txt -H "Origin: https://tudoh8.github.io" -H "User-Agent: Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 Chrome/130 Mobile Safari/537.36" "https://sync.runescape.wiki/runelite/player/$name/STANDARD" || true
+            head -c 300 body.txt; echo
+          done
+          echo "=== OPTIONS preflight"
+          curl -sS -D - -o /dev/null -X OPTIONS -H "Origin: https://tudoh8.github.io" -H "Access-Control-Request-Method: GET" "https://sync.runescape.wiki/runelite/player/Zezima/STANDARD" || true
