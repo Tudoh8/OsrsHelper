@@ -57,5 +57,5 @@ Quests Quest Helper doesn't cover go in `scripts/quest_overrides.json`. The cura
 
 ## Deploying
 
-`.github/workflows/deploy.yml` builds and publishes to GitHub Pages on every push to `main`. Enable it once
+`.github/workflows/deploy.yml` builds and publishes to GitHub Pages on every push to the default branch. Enable it once
 under **Settings → Pages → Build and deployment → Source: GitHub Actions**.
