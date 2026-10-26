@@ -1,5 +1,4 @@
 import { describe, expect, it } from 'vitest';
-import sample from '../../public/sample-player.json';
 import {
   allDiaryAdvice, allMilestones, checkQuest, closestDiaries, nextCombatLevel, questChain,
   questPoints, readyQuests, trainingSuggestions,
@@ -7,13 +6,20 @@ import {
 import { DIARIES, IRONMAN_ORDER, MAX_QUEST_POINTS, QUESTS, QUEST_BY_NAME } from './data';
 import { MILESTONES } from './milestones';
 import { SKILLS, combatLevel, xpForLevel } from './skills';
-import { parsePlayer, type Player } from './wikisync';
+import type { Player } from './player';
+import { BASELINE, parseProgress, withDiaryDone, withQuestState } from './progress';
 
-const player = parsePlayer(sample);
+// The owner's real progress with made-up mid-game levels.
+const player: Player = {
+  username: 'test',
+  type: 'ironman',
+  levels: Object.fromEntries(SKILLS.map((s) => [s, s === 'Sailing' ? 30 : 60])) as Player['levels'],
+  ...BASELINE,
+};
 
 function fresh(): Player {
   const levels = Object.fromEntries(SKILLS.map((s) => [s, s === 'Hitpoints' ? 10 : 1])) as Player['levels'];
-  return { username: 'new', levels, quests: {}, diaries: {} };
+  return { username: 'new', type: 'ironman', levels, quests: {}, diaries: {} };
 }
 
 describe('data', () => {
@@ -57,15 +63,37 @@ describe('skills', () => {
   });
 });
 
-describe('parsePlayer', () => {
-  it('reads WikiSync JSON', () => {
-    expect(player.username).toBe('Sample Iron');
-    expect(player.levels.Sailing).toBe(34);
-    expect(player.diaries.Ardougne.Easy?.complete).toBe(true);
+describe('progress', () => {
+  it('starts from the screenshot baseline', () => {
+    expect(questPoints(player)).toBe(200);
+    expect(allDiaryAdvice(player).filter((d) => d.complete)).toHaveLength(12);
   });
 
-  it('rejects other JSON', () => {
-    expect(() => parsePlayer({ foo: 1 })).toThrow();
+  it('keeps Recipe for Disaster in step with its parts', () => {
+    let p = BASELINE;
+    for (const n of QUESTS.map((q) => q.name).filter((n) => n.startsWith('Recipe for Disaster - '))) {
+      p = withQuestState(p, n, 2);
+    }
+    expect(p.quests['Recipe for Disaster']).toBe(2);
+    expect(withQuestState(p, 'Recipe for Disaster - Evil Dave', 0).quests['Recipe for Disaster']).toBe(1);
+  });
+
+  it('clamps diary task counts', () => {
+    expect(withDiaryDone(BASELINE, 'Desert', 'Easy', 99).diaries.Desert.Easy).toEqual({ done: 11, total: 11 });
+    expect(withDiaryDone(BASELINE, 'Desert', 'Easy', -3).diaries.Desert.Easy?.done).toBe(0);
+  });
+
+  it('round-trips a backup and rejects other JSON', () => {
+    expect(parseProgress(JSON.parse(JSON.stringify(BASELINE)))).toEqual(BASELINE);
+    expect(() => parseProgress({ foo: 1 })).toThrow();
+  });
+
+  it('uses exact XP when the Hiscores give it', () => {
+    const p = fresh();
+    p.levels.Thieving = 52;
+    p.xp = { ...p.levels, Thieving: 120_000 };
+    const gap = checkQuest(p, QUEST_BY_NAME.get('Desert Treasure I')!).skillGaps.find((g) => g.skill === 'Thieving');
+    expect(gap?.xp).toBe(xpForLevel(53) - 120_000);
   });
 });
 
@@ -93,7 +121,7 @@ describe('quests', () => {
 
   it('counts quest points from finished quests', () => {
     expect(questPoints(fresh())).toBe(0);
-    expect(questPoints(player)).toBeGreaterThan(50);
+    expect(questPoints(player)).toBe(200);
   });
 });
 

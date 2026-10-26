@@ -3,14 +3,22 @@ import {
   type DiaryTier, type Quest, type QuestReq, type Requirements, type SkillReq, type Tier,
 } from './data';
 import { MILESTONES, type Milestone } from './milestones';
-import { SKILLS, combatLevel, xpBetween, type Skill } from './skills';
-import type { Player } from './wikisync';
+import { SKILLS, combatLevel, xpBetween, xpForLevel, type Skill } from './skills';
+import { isTierComplete, type Player } from './player';
 
 /** Boostable requirements this close are treated as doable with a boost. */
 export const BOOST_LEEWAY = 3;
 
 export interface SkillGap extends SkillReq {
   have: number;
+  /** XP still needed to reach the level. */
+  xp: number;
+}
+
+/** XP still needed to reach `level`: exact with Hiscores XP, else from the start of the current level. */
+export function xpTo(player: Player, skill: Skill, level: number): number {
+  const xp = player.xp?.[skill];
+  return xp === undefined ? xpBetween(player.levels[skill], level) : Math.max(0, xpForLevel(level) - xp);
 }
 
 export type Status = 'done' | 'ready' | 'boost' | 'blocked';
@@ -43,7 +51,7 @@ export function questPoints(player: Player): number {
 export function checkRequirements(player: Player, reqs: Requirements, done = false): Check {
   const skillGaps = reqs.skills
     .filter((r) => player.levels[r.skill] < r.level)
-    .map((r) => ({ ...r, have: player.levels[r.skill] }));
+    .map((r) => ({ ...r, have: player.levels[r.skill], xp: xpTo(player, r.skill, r.level) }));
   const questGaps = reqs.quests.filter((r) => !reqMet(player, r));
   const qpShort = Math.max(0, (reqs.questPointsRequired ?? 0) - questPoints(player));
   const combatShort = Math.max(0, (reqs.combatLevel ?? 0) - combatLevel(player.levels));
@@ -127,8 +135,8 @@ export function skillTargets(player: Player, reqLists: { source: string; reqs: S
   }
   return [...best.entries()]
     .filter(([skill, t]) => player.levels[skill] < t.level)
-    .map(([skill, t]) => ({ skill, level: t.level, have: player.levels[skill], source: t.source }))
-    .sort((a, b) => xpBetween(b.have, b.level) - xpBetween(a.have, a.level));
+    .map(([skill, t]) => ({ skill, level: t.level, have: player.levels[skill], xp: xpTo(player, skill, t.level), source: t.source }))
+    .sort((a, b) => b.xp - a.xp);
 }
 
 // ---------------------------------------------------------------------------
@@ -236,7 +244,7 @@ export function allDiaryAdvice(player: Player): DiaryAdvice[] {
       const data = DIARIES[diary][tier];
       if (!data) continue;
       const progress = player.diaries[diary]?.[tier];
-      const complete = progress?.complete ?? false;
+      const complete = isTierComplete(progress);
       // Quest Helper's diary combat levels are mostly advice for a task's monster, not a game rule,
       // so they are shown as recommendations instead of blocking the tier.
       const check = checkRequirements(player, { ...data, combatLevel: undefined }, complete);
@@ -245,10 +253,10 @@ export function allDiaryAdvice(player: Player): DiaryAdvice[] {
         tier,
         data,
         complete,
-        tasksDone: progress?.tasks.filter(Boolean).length ?? 0,
-        tasksTotal: progress?.tasks.length ?? 0,
+        tasksDone: progress?.done ?? 0,
+        tasksTotal: progress?.total ?? 0,
         check,
-        xpNeeded: check.skillGaps.reduce((s, g) => s + xpBetween(g.have, g.level), 0),
+        xpNeeded: check.skillGaps.reduce((s, g) => s + g.xp, 0),
         questsNeeded: complete ? [] : questChain(
           player,
           check.questGaps.filter((q) => q.state === 'finished').map((q) => q.name),
@@ -345,7 +353,7 @@ export function trainingSuggestions(player: Player): TrainingSuggestion[] {
         const othersMet = it.skills.every((r) => r.skill === skill || player.levels[r.skill] >= r.level);
         (othersMet ? unlocks : helps).push(it);
       }
-      const xp = xpBetween(have, to);
+      const xp = xpTo(player, skill, to);
       const value = unlocks.reduce((s, u) => s + u.weight, 0) + 0.25 * helps.reduce((s, u) => s + u.weight, 0);
       // Diminishing cost so cheap unlocks win, without hiding bigger goals entirely.
       const score = value / Math.sqrt(1 + xp / 50_000);
@@ -375,7 +383,7 @@ export function laggingSkills(player: Player): BalanceNote[] {
 /** Skills closest to 99 (by XP still needed), excluding those already at 99. */
 export function closestTo99(player: Player, n = 3) {
   return SKILLS.filter((s) => player.levels[s] < 99 && player.levels[s] >= 70)
-    .map((skill) => ({ skill, level: player.levels[skill], xp: xpBetween(player.levels[skill], 99) }))
+    .map((skill) => ({ skill, level: player.levels[skill], xp: xpTo(player, skill, 99) }))
     .sort((a, b) => a.xp - b.xp)
     .slice(0, n);
 }

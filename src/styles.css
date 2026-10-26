@@ -227,3 +227,13 @@ ol.plain-list { counter-reset: n; }
   .data-table th:nth-child(3), .data-table td:nth-child(3) { display: none; }
   .quest-detail { padding-left: 8px; }
 }
+
+/* Progress editing */
+.push-right { margin-left: auto; }
+.state-picker { display: inline-flex; margin: 4px 0 8px; }
+.state-picker button { padding: 4px 10px; }
+.stepper { margin: 4px 0 8px; }
+.stepper button.secondary { padding: 2px 12px; }
+.summary h2 .tag { font-size: 0.75rem; vertical-align: middle; color: var(--gold); border-color: var(--gold); }
+.progress-tools summary { cursor: pointer; color: var(--gold); font-weight: 600; }
+.progress-tools[open] summary { margin-bottom: 8px; }

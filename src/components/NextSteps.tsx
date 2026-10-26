@@ -2,6 +2,7 @@ import type { Advice, MilestoneProgress } from '../lib/advice';
 import { formatXp } from '../lib/skills';
 import { Gaps, QuestLink, SkillIcon, StatusBadge } from './common';
 import type { Tab } from '../App';
+import type { QuestState } from '../lib/player';
 
 const STAGE_RANK = { early: 0, mid: 1, late: 2 };
 
@@ -21,7 +22,7 @@ function shortReward(a: Advice['ready'][number]): string | null {
   return null;
 }
 
-export function NextSteps({ advice, goTo }: { advice: Advice; goTo: (t: Tab) => void }) {
+export function NextSteps({ advice, goTo, onSetQuest }: { advice: Advice; goTo: (t: Tab) => void; onSetQuest: (name: string, state: QuestState) => void }) {
   const ready = advice.ready.slice(0, 6);
   const next = advice.next;
   const milestones = rankMilestones(advice.milestones).slice(0, 4);
@@ -47,6 +48,7 @@ export function NextSteps({ advice, goTo }: { advice: Advice; goTo: (t: Tab) => 
                   {a.inProgress && <StatusBadge status={a.check.status} inProgress />}
                   {a.check.status === 'boost' && <StatusBadge status="boost" />}
                   {a.quest.questPoints > 0 && <span className="muted small">{a.quest.questPoints} QP</span>}
+                  <button className="link-button small push-right" onClick={() => onSetQuest(a.quest.name, 2)}>Mark done</button>
                 </div>
                 {shortReward(a) && <div className="muted small">{shortReward(a)}</div>}
               </li>

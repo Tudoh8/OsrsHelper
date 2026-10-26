@@ -1,8 +1,16 @@
 import { MAX_QUEST_POINTS, QUESTS } from '../lib/data';
-import { combatLevel, SKILLS, totalLevel, formatXp, xpBetween } from '../lib/skills';
-import type { Player } from '../lib/wikisync';
-import { isQuestDone, questPoints } from '../lib/advice';
+import { combatLevel, SKILLS, totalLevel, formatXp } from '../lib/skills';
+import type { AccountType, Player } from '../lib/player';
+import { isQuestDone, questPoints, xpTo } from '../lib/advice';
 import { SkillIcon } from './common';
+
+const TYPE_LABEL: Record<AccountType, string | null> = {
+  regular: null,
+  ironman: 'Ironman',
+  hardcore: 'Hardcore ironman',
+  ultimate: 'Ultimate ironman',
+  unknown: null,
+};
 
 function timeAgo(iso?: string): string | null {
   if (!iso) return null;
@@ -16,19 +24,19 @@ function timeAgo(iso?: string): string | null {
   return `${Math.round(hours / 24)} days ago`;
 }
 
-export function Summary({ player, diariesDone, sourceLabel }: { player: Player; diariesDone: number; sourceLabel: string }) {
+export function Summary({ player, diariesDone }: { player: Player; diariesDone: number }) {
   const quests = QUESTS.filter((q) => !q.miniquest && !q.aggregate);
   const questsDone = quests.filter((q) => isQuestDone(player, q.name)).length;
-  const synced = timeAgo(player.timestamp);
+  const updated = timeAgo(player.updatedAt);
+  const typeLabel = TYPE_LABEL[player.type];
 
   return (
     <section className="card summary">
       <div className="summary-head">
-        <h2>{player.username}</h2>
-        <span className="muted small">
-          {sourceLabel}
-          {synced && ` · data from ${synced}`}
-        </span>
+        <h2>
+          {player.username} {typeLabel && <span className="tag">{typeLabel}</span>}
+        </h2>
+        {updated && <span className="muted small">Hiscores updated {updated}</span>}
       </div>
       <div className="stat-row">
         <Stat label="Total level" value={totalLevel(player.levels)} />
@@ -40,7 +48,10 @@ export function Summary({ player, diariesDone, sourceLabel }: { player: Player; 
       <div className="skills-grid">
         {SKILLS.map((s) => {
           const lvl = player.levels[s];
-          const title = lvl >= 99 ? `${s}: 99` : `${s}: ${lvl} (about ${formatXp(xpBetween(lvl, lvl + 1))} XP to ${lvl + 1})`;
+          const xp = player.xp?.[s];
+          const title = lvl >= 99
+            ? `${s}: 99${xp ? ` (${formatXp(xp)} XP)` : ''}`
+            : `${s}: ${lvl}, ${formatXp(xpTo(player, s, lvl + 1))} XP to ${lvl + 1}`;
           return (
             <div key={s} className={`skill-cell${lvl >= 99 ? ' maxed' : ''}`} title={title}>
               <SkillIcon skill={s} size={20} />

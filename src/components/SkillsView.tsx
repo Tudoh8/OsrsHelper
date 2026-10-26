@@ -1,5 +1,5 @@
 import type { Advice } from '../lib/advice';
-import { formatXp, xpBetween } from '../lib/skills';
+import { formatXp } from '../lib/skills';
 import { SkillIcon } from './common';
 
 export function SkillsView({ advice }: { advice: Advice }) {
@@ -94,7 +94,7 @@ export function SkillsView({ advice }: { advice: Advice }) {
               <div key={t.skill} className="target">
                 <SkillIcon skill={t.skill} />
                 <span><strong>{t.skill}</strong> {t.have} → {t.level}</span>
-                <span className="muted small">{t.source} · {formatXp(xpBetween(t.have, t.level))} XP</span>
+                <span className="muted small">{t.source} · {formatXp(t.xp)} XP</span>
               </div>
             ))}
           </div>

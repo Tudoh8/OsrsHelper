@@ -1,7 +1,7 @@
 import { useState, type ReactNode } from 'react';
 import type { Check, ChainStep, Status } from '../lib/advice';
 import { questWikiUrl, type Rewards } from '../lib/data';
-import { formatXp, skillIcon, xpBetween, type Skill } from '../lib/skills';
+import { formatXp, skillIcon, type Skill } from '../lib/skills';
 
 const STATUS_LABEL: Record<Status, string> = {
   done: 'Done',
@@ -51,7 +51,7 @@ export function Gaps({ check }: { check: Check }) {
         <li key={g.skill}>
           <SkillIcon skill={g.skill} size={14} /> {g.level} {g.skill}{' '}
           <span className="muted">
-            (you have {g.have}{g.boostable ? ', boostable' : ''}, {formatXp(xpBetween(g.have, g.level))} XP)
+            (you have {g.have}{g.boostable ? ', boostable' : ''}, {formatXp(g.xp)} XP)
           </span>
         </li>
       ))}

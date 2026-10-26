@@ -1,0 +1,342 @@
+{
+ "recordedAt": "2026-10-26",
+ "quests": {
+  "A Soul's Bane": 2,
+  "Animal Magnetism": 2,
+  "Another Slice of H.A.M.": 2,
+  "Below Ice Mountain": 2,
+  "Big Chompy Bird Hunting": 2,
+  "Biohazard": 2,
+  "Black Knights' Fortress": 2,
+  "Bone Voyage": 2,
+  "Cabin Fever": 2,
+  "Children of the Sun": 2,
+  "Client of Kourend": 2,
+  "Cook's Assistant": 2,
+  "Creature of Fenkenstrain": 2,
+  "Darkness of Hallowvale": 2,
+  "Death Plateau": 2,
+  "Death to the Dorgeshuun": 2,
+  "Demon Slayer": 2,
+  "Doric's Quest": 2,
+  "Dragon Slayer I": 2,
+  "Dream Mentor": 2,
+  "Druidic Ritual": 2,
+  "Dwarf Cannon": 2,
+  "Eadgar's Ruse": 2,
+  "Elemental Workshop I": 2,
+  "Elemental Workshop II": 2,
+  "Enlightened Journey": 2,
+  "Enter the Abyss": 2,
+  "Ernest the Chicken": 2,
+  "Fairytale I - Growing Pains": 2,
+  "Fairytale II - Cure a Queen": 2,
+  "Family Crest": 2,
+  "Family Pest": 2,
+  "Fishing Contest": 2,
+  "Garden of Tranquillity": 2,
+  "Gertrude's Cat": 2,
+  "Ghosts Ahoy": 2,
+  "Goblin Diplomacy": 2,
+  "Haunted Mine": 2,
+  "Hazeel Cult": 2,
+  "Heroes' Quest": 2,
+  "Holy Grail": 2,
+  "Icthlarin's Little Helper": 2,
+  "Imp Catcher": 2,
+  "In Aid of the Myreque": 2,
+  "In Search of the Myreque": 2,
+  "Jungle Potion": 2,
+  "King's Ransom": 2,
+  "Lair of Tarn Razorlor": 2,
+  "Learning the Ropes": 2,
+  "Legends' Quest": 2,
+  "Lost City": 2,
+  "Lunar Diplomacy": 2,
+  "Mage Arena I": 2,
+  "Merlin's Crystal": 2,
+  "Misthalin Mystery": 2,
+  "Monkey Madness I": 2,
+  "Murder Mystery": 2,
+  "Nature Spirit": 2,
+  "Observatory Quest": 2,
+  "One Small Favour": 2,
+  "Pandemonium": 2,
+  "Pirate's Treasure": 2,
+  "Plague City": 2,
+  "Priest in Peril": 2,
+  "Prince Ali Rescue": 2,
+  "Prying Times": 2,
+  "Ratcatchers": 2,
+  "Recipe for Disaster - Another Cook's Quest": 2,
+  "Recipe for Disaster - Evil Dave": 2,
+  "Recipe for Disaster - Lumbridge Guide": 2,
+  "Recipe for Disaster - Mountain Dwarf": 2,
+  "Recipe for Disaster - Pirate Pete": 2,
+  "Recipe for Disaster - Skrach Uglogwee": 2,
+  "Recipe for Disaster - Wartface & Bentnoze": 2,
+  "Recruitment Drive": 2,
+  "Regicide": 2,
+  "Romeo & Juliet": 2,
+  "Royal Trouble": 2,
+  "Rum Deal": 2,
+  "Rune Mysteries": 2,
+  "Sea Slug": 2,
+  "Shades of Mort'ton": 2,
+  "Shadow of the Storm": 2,
+  "Sheep Shearer": 2,
+  "Shield of Arrav": 2,
+  "Shilo Village": 2,
+  "Tai Bwo Wannai Trio": 2,
+  "Tears of Guthix": 2,
+  "Temple of Ikov": 2,
+  "Temple of the Eye": 2,
+  "The Ascent of Arceuus": 2,
+  "The Dig Site": 2,
+  "The Eyes of Glouphrie": 2,
+  "The Feud": 2,
+  "The Fremennik Isles": 2,
+  "The Fremennik Trials": 2,
+  "The Giant Dwarf": 2,
+  "The Golem": 2,
+  "The Grand Tree": 2,
+  "The Hand in the Sand": 2,
+  "The Knight's Sword": 2,
+  "The Lost Tribe": 2,
+  "The Queen of Thieves": 2,
+  "The Restless Ghost": 2,
+  "The Slug Menace": 2,
+  "The Tourist Trap": 2,
+  "Throne of Miscellania": 2,
+  "Tower of Life": 2,
+  "Tree Gnome Village": 2,
+  "Troll Stronghold": 2,
+  "Underground Pass": 2,
+  "Wanted!": 2,
+  "Watchtower": 2,
+  "Waterfall Quest": 2,
+  "What Lies Below": 2,
+  "Witch's House": 2,
+  "X Marks the Spot": 2,
+  "Zogre Flesh Eaters": 2,
+  "Recipe for Disaster": 1
+ },
+ "diaries": {
+  "Ardougne": {
+   "Easy": {
+    "done": 10,
+    "total": 10
+   },
+   "Medium": {
+    "done": 12,
+    "total": 12
+   },
+   "Hard": {
+    "done": 4,
+    "total": 12
+   },
+   "Elite": {
+    "done": 0,
+    "total": 8
+   }
+  },
+  "Desert": {
+   "Easy": {
+    "done": 4,
+    "total": 11
+   },
+   "Medium": {
+    "done": 3,
+    "total": 12
+   },
+   "Hard": {
+    "done": 2,
+    "total": 10
+   },
+   "Elite": {
+    "done": 0,
+    "total": 6
+   }
+  },
+  "Falador": {
+   "Easy": {
+    "done": 11,
+    "total": 11
+   },
+   "Medium": {
+    "done": 6,
+    "total": 14
+   },
+   "Hard": {
+    "done": 6,
+    "total": 11
+   },
+   "Elite": {
+    "done": 0,
+    "total": 6
+   }
+  },
+  "Fremennik": {
+   "Easy": {
+    "done": 10,
+    "total": 10
+   },
+   "Medium": {
+    "done": 1,
+    "total": 9
+   },
+   "Hard": {
+    "done": 4,
+    "total": 9
+   },
+   "Elite": {
+    "done": 0,
+    "total": 6
+   }
+  },
+  "Kandarin": {
+   "Easy": {
+    "done": 5,
+    "total": 11
+   },
+   "Medium": {
+    "done": 6,
+    "total": 14
+   },
+   "Hard": {
+    "done": 1,
+    "total": 11
+   },
+   "Elite": {
+    "done": 0,
+    "total": 7
+   }
+  },
+  "Karamja": {
+   "Easy": {
+    "done": 10,
+    "total": 10
+   },
+   "Medium": {
+    "done": 19,
+    "total": 19
+   },
+   "Hard": {
+    "done": 10,
+    "total": 10
+   },
+   "Elite": {
+    "done": 0,
+    "total": 5
+   }
+  },
+  "Kourend & Kebos": {
+   "Easy": {
+    "done": 7,
+    "total": 12
+   },
+   "Medium": {
+    "done": 6,
+    "total": 13
+   },
+   "Hard": {
+    "done": 2,
+    "total": 10
+   },
+   "Elite": {
+    "done": 0,
+    "total": 8
+   }
+  },
+  "Lumbridge & Draynor": {
+   "Easy": {
+    "done": 12,
+    "total": 12
+   },
+   "Medium": {
+    "done": 12,
+    "total": 12
+   },
+   "Hard": {
+    "done": 3,
+    "total": 11
+   },
+   "Elite": {
+    "done": 0,
+    "total": 6
+   }
+  },
+  "Morytania": {
+   "Easy": {
+    "done": 4,
+    "total": 11
+   },
+   "Medium": {
+    "done": 6,
+    "total": 11
+   },
+   "Hard": {
+    "done": 3,
+    "total": 10
+   },
+   "Elite": {
+    "done": 0,
+    "total": 6
+   }
+  },
+  "Varrock": {
+   "Easy": {
+    "done": 14,
+    "total": 14
+   },
+   "Medium": {
+    "done": 13,
+    "total": 13
+   },
+   "Hard": {
+    "done": 2,
+    "total": 10
+   },
+   "Elite": {
+    "done": 0,
+    "total": 5
+   }
+  },
+  "Western Provinces": {
+   "Easy": {
+    "done": 2,
+    "total": 11
+   },
+   "Medium": {
+    "done": 4,
+    "total": 13
+   },
+   "Hard": {
+    "done": 0,
+    "total": 13
+   },
+   "Elite": {
+    "done": 0,
+    "total": 7
+   }
+  },
+  "Wilderness": {
+   "Easy": {
+    "done": 12,
+    "total": 12
+   },
+   "Medium": {
+    "done": 2,
+    "total": 11
+   },
+   "Hard": {
+    "done": 2,
+    "total": 10
+   },
+   "Elite": {
+    "done": 0,
+    "total": 7
+   }
+  }
+ }
+}

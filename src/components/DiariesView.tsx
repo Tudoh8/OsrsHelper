@@ -2,12 +2,18 @@ import { useState } from 'react';
 import { type Advice, type DiaryAdvice } from '../lib/advice';
 import { DIARY_NAMES, TIERS, diaryWikiUrl } from '../lib/data';
 import { combatLevel, formatXp } from '../lib/skills';
-import type { Player } from '../lib/wikisync';
+import type { Player } from '../lib/player';
+import type { Tier } from '../lib/data';
 import { Chain, Gaps, RewardList, StatusBadge } from './common';
 
-export function DiariesView({ advice, player }: { advice: Advice; player: Player }) {
-  const [selected, setSelected] = useState<DiaryAdvice | null>(advice.closestDiaries[0] ?? null);
+type SetDiary = (diary: string, tier: Tier, done: number) => void;
+
+export function DiariesView({ advice, player, onSetDiary }: { advice: Advice; player: Player; onSetDiary: SetDiary }) {
   const byKey = new Map(advice.diaries.map((d) => [`${d.diary}|${d.tier}`, d]));
+  const first = advice.closestDiaries[0];
+  const [selectedKey, setSelectedKey] = useState(first ? `${first.diary}|${first.tier}` : null);
+  // Look the tier up again on every render so edits show straight away.
+  const selected = selectedKey ? byKey.get(selectedKey) : undefined;
 
   return (
     <div className="stack">
@@ -36,7 +42,7 @@ export function DiariesView({ advice, player }: { advice: Advice; player: Player
                       <td key={tier}>
                         <button
                           className={`diary-cell status-${d.check.status}${isSel ? ' selected' : ''}`}
-                          onClick={() => setSelected(d)}
+                          onClick={() => setSelectedKey(`${diary}|${tier}`)}
                           aria-label={`${diary} ${tier}`}
                         >
                           {d.complete ? '✓' : d.tasksTotal ? `${d.tasksDone}/${d.tasksTotal}` : '–'}
@@ -55,19 +61,29 @@ export function DiariesView({ advice, player }: { advice: Advice; player: Player
         </div>
       </section>
 
-      {selected && <DiaryDetail d={selected} player={player} />}
+      {selected && <DiaryDetail d={selected} player={player} onSetDiary={onSetDiary} />}
     </div>
   );
 }
 
-function DiaryDetail({ d, player }: { d: DiaryAdvice; player: Player }) {
+function DiaryDetail({ d, player, onSetDiary }: { d: DiaryAdvice; player: Player; onSetDiary: SetDiary }) {
   return (
     <section className="card">
       <div className="row">
         <h3>{d.diary} {d.tier}</h3>
         <StatusBadge status={d.check.status} />
-        {d.tasksTotal > 0 && <span className="muted small">{d.tasksDone}/{d.tasksTotal} tasks done</span>}
       </div>
+      {d.tasksTotal > 0 && (
+        <div className="row stepper">
+          <span>Tasks done:</span>
+          <button className="secondary" aria-label="One task fewer" disabled={d.tasksDone <= 0} onClick={() => onSetDiary(d.diary, d.tier, d.tasksDone - 1)}>−</button>
+          <strong>{d.tasksDone} / {d.tasksTotal}</strong>
+          <button className="secondary" aria-label="One task more" disabled={d.tasksDone >= d.tasksTotal} onClick={() => onSetDiary(d.diary, d.tier, d.tasksDone + 1)}>+</button>
+          {!d.complete && (
+            <button className="link-button" onClick={() => onSetDiary(d.diary, d.tier, d.tasksTotal)}>Mark complete</button>
+          )}
+        </div>
+      )}
       {!d.complete && d.check.status !== 'ready' && (
         <>
           <h4>Still needed</h4>

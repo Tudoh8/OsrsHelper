@@ -1,6 +1,7 @@
 import { useMemo, useState } from 'react';
 import type { Advice, QuestAdvice } from '../lib/advice';
-import { formatXp, xpBetween } from '../lib/skills';
+import { formatXp } from '../lib/skills';
+import type { QuestState } from '../lib/player';
 import { Gaps, QuestLink, RewardList, SkillIcon, StatusBadge } from './common';
 
 type Filter = 'todo' | 'ready' | 'blocked' | 'done' | 'all';
@@ -22,7 +23,7 @@ function matches(a: QuestAdvice, f: Filter) {
   return true;
 }
 
-export function QuestsView({ advice }: { advice: Advice }) {
+export function QuestsView({ advice, onSetQuest }: { advice: Advice; onSetQuest: (name: string, state: QuestState) => void }) {
   const [filter, setFilter] = useState<Filter>('todo');
   const [minis, setMinis] = useState(true);
   const [query, setQuery] = useState('');
@@ -33,7 +34,7 @@ export function QuestsView({ advice }: { advice: Advice }) {
       matches(a, filter) && (minis || !a.quest.miniquest) && (!q || a.quest.name.toLowerCase().includes(q)));
   }, [advice, filter, minis, query]);
 
-  const totalXp = advice.questCape.reduce((s, t) => s + xpBetween(t.have, t.level), 0);
+  const totalXp = advice.questCape.reduce((s, t) => s + t.xp, 0);
 
   return (
     <div className="stack">
@@ -82,7 +83,7 @@ export function QuestsView({ advice }: { advice: Advice }) {
         </div>
         <ol className="quest-list">
           {list.map((a) => (
-            <QuestRow key={a.quest.name} a={a} />
+            <QuestRow key={a.quest.name} a={a} onSetQuest={onSetQuest} />
           ))}
         </ol>
         {!list.length && <p className="muted">No quests match.</p>}
@@ -91,7 +92,7 @@ export function QuestsView({ advice }: { advice: Advice }) {
   );
 }
 
-function QuestRow({ a }: { a: QuestAdvice }) {
+function QuestRow({ a, onSetQuest }: { a: QuestAdvice; onSetQuest: (name: string, state: QuestState) => void }) {
   const [open, setOpen] = useState(false);
   const q = a.quest;
   return (
@@ -105,6 +106,7 @@ function QuestRow({ a }: { a: QuestAdvice }) {
       </button>
       {open && (
         <div className="quest-detail">
+          <QuestStatePicker name={q.name} state={a.check.status === 'done' ? 2 : a.inProgress ? 1 : 0} onSetQuest={onSetQuest} />
           <Gaps check={a.check} />
           {q.skills.length > 0 && (
             <p className="small">
@@ -131,5 +133,29 @@ function QuestRow({ a }: { a: QuestAdvice }) {
         </div>
       )}
     </li>
+  );
+}
+
+const STATES: { state: QuestState; label: string }[] = [
+  { state: 0, label: 'Not started' },
+  { state: 1, label: 'Started' },
+  { state: 2, label: 'Done' },
+];
+
+function QuestStatePicker({ name, state, onSetQuest }: { name: string; state: QuestState; onSetQuest: (name: string, state: QuestState) => void }) {
+  return (
+    <div className="segmented small state-picker" role="radiogroup" aria-label={`${name} progress`}>
+      {STATES.map((s) => (
+        <button
+          key={s.state}
+          role="radio"
+          aria-checked={state === s.state}
+          className={state === s.state ? 'active' : ''}
+          onClick={() => onSetQuest(name, s.state)}
+        >
+          {s.label}
+        </button>
+      ))}
+    </div>
   );
 }

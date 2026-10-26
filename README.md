@@ -1,9 +1,8 @@
 # OSRS Ironman Helper
 
-A static website that reads your Old School RuneScape progress from
-[WikiSync](https://oldschool.runescape.wiki/w/RuneScape:WikiSync) and tells you what to do next as an ironman:
+A static website that shows your Old School RuneScape stats and tells you what to do next as an ironman:
 
-- **What next**: quests you can start right now (in the wiki's ironman optimal quest order), the skill levels
+- **What next**: quests you can do right now (in the wiki's ironman optimal quest order), the skill levels
   that unlock the most, key unlocks within reach, and the diary tiers you're closest to.
 - **Quests**: the full ironman quest path with each quest's status, requirements and rewards, plus the skill
   levels still needed for the quest cape.
@@ -12,23 +11,20 @@ A static website that reads your Old School RuneScape progress from
 - **Diaries**: all 48 tiers, with task progress, missing requirements and rewards.
 - **Skills**: best levels to train for unlocks, combat, closest 99s, lagging skills and every diary's levels.
 
-## Using it
+## Where the data comes from
 
-1. Install the **WikiSync** plugin from the RuneLite Plugin Hub and log in once.
-2. Open the site and enter your RuneScape name. Data is fetched straight from
-   `https://sync.runescape.wiki/runelite/player/<name>/STANDARD`.
-3. If that fails, use **Paste JSON**: open the URL above in a browser, copy the result and paste it in.
+- **Levels and XP** come from the official Hiscores through [Wise Old Man](https://wiseoldman.net), fetched
+  when you enter your name. `?rsn=Your Name` in the URL loads a player directly.
+- **Quest and diary progress** starts from `src/data/myProgress.json` (read from in-game screenshots) and is
+  updated on the site: mark quests done in the Quests tab and count diary tasks in the Diaries tab. Changes are
+  saved in the browser; use *Download backup* to keep a copy or move it to another device.
 
-Your last lookup is remembered in the browser and refreshed when you come back. `?rsn=Your Name` in the URL
-loads a player directly.
+WikiSync isn't used: the OSRS Wiki blocks it for third-party sites.
 
 ## How it works
 
 Everything runs in the browser; there is no backend. All requirement data is bundled into the site at build
-time (`src/data/*.json`) and the advice is computed from your WikiSync data on page load
-(`src/lib/advice.ts`).
-
-WikiSync only reports levels, not XP, so XP estimates assume you're at the start of your current level.
+time (`src/data/*.json`) and the advice is computed on page load (`src/lib/advice.ts`).
 
 ## Development
 
