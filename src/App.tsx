@@ -27,6 +27,9 @@ const TABS: { id: Tab; label: string }[] = [
 
 const STATS_KEY = 'osrs-helper:stats';
 
+/** The account the built-in quest and diary progress belongs to. */
+const OWNER_RSN = 'iron tudoh';
+
 function loadStats(): Stats | null {
   try {
     const s = localStorage.getItem(STATS_KEY);
@@ -77,8 +80,7 @@ export function App() {
 
   // Refresh levels on every visit when a name is known.
   useEffect(() => {
-    const rsn = urlRsn ?? cached?.username;
-    if (rsn) lookup(rsn);
+    lookup(urlRsn ?? cached?.username ?? OWNER_RSN);
   }, []);
 
   const updateProgress = useCallback((next: (p: Progress) => Progress) => {
@@ -114,7 +116,7 @@ export function App() {
       </header>
 
       <LoadPanel
-        initialRsn={urlRsn ?? cached?.username ?? ''}
+        initialRsn={urlRsn ?? cached?.username ?? OWNER_RSN}
         loading={loading}
         error={error}
         compact={!!player}
